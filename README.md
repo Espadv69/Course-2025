@@ -1,7 +1,3 @@
-## COURSE 2025
+# COURSE 2025
 
----
-
-# Academy Project
-
----
+## Academy Project
