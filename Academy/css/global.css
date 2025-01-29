@@ -59,3 +59,11 @@ nav {
 
   border-bottom: 2px solid gray;
 }
+
+.header-enrollments {
+  margin-top: .5rem;
+  padding: 0 1rem;
+
+  display: flex;
+  gap: 1rem;
+}
