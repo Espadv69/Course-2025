@@ -39,10 +39,23 @@ nav {
   margin: auto;
 
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.4rem;
+}
+
+.main-container {
+  margin: 1rem auto;
+
+  width: 100%;
+  max-width: 450px;
+}
+
+.h1-title {
+  text-align: center;
+
+  border-bottom: 2px solid gray;
 }
