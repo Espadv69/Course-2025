@@ -37,6 +37,7 @@ a {
 
 nav {
   margin: auto;
+  padding: .4rem .6rem;
 
   width: 100%;
   max-width: 450px;
@@ -45,6 +46,8 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.4rem;
+
+  background: rgba(245, 245, 245, 0.200);
 }
 
 .main-container {
@@ -65,5 +68,6 @@ nav {
   padding: 0 1rem;
 
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
