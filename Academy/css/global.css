@@ -71,3 +71,18 @@ nav {
   justify-content: center;
   gap: 1rem;
 }
+
+.form-enrollments {
+  margin-top: 1rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+
+  background: rgba(245, 245, 245, 0.200);
+}
