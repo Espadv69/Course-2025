@@ -47,6 +47,9 @@ nav {
   justify-content: center;
   gap: 1.4rem;
 
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+
   background: rgba(245, 245, 245, 0.200);
 }
 
