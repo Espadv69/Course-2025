@@ -1,4 +1,14 @@
-document.querySelector('.navbar').innerHTML = fetch('includes/navbar.html')
-  .then((response) => response.text())
-  .then((data) => (document.querySelector('.navbar').innerHTML = data))
-  .catch((e) => console.log('There was an error', e.message))
+document.addEventListener('DOMContentLoaded', async function () {
+  const $navbar = document.querySelector('.navbar')
+
+  try {
+    const response = await fetch('includes/navbar.html')
+    if (!response.ok) {
+      throw new Error('Failed to load the navbar')
+    }
+    const navbarHTML = await response.text()
+    $navbar.innerHTML = navbarHTML
+  } catch (e) {
+    console.error('Error:', e)
+  }
+})
