@@ -7,6 +7,6 @@
     <link rel="stylesheet" href="../assets/css/global.css">
   </head>
   <body>
-    <?php require_once "../includes/header.php" ?>
+    <?php require_once "./includes/header.php" ?>
   </body>
 </html>
