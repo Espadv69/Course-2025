@@ -18,6 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
           `
         <div class="data-saved-content">
           <p>Full Name: <strong>${data.name} ${data.lastname}</strong></p>
+          <p>ID: <strong>${data.id}</strong></p>
+          <p>Phone Number: <strong>${data.phone_number}</strong></p>
           <p>Degrees: <strong>${data.degrees}</strong></p>
           <button onclick="deleteEnrollment(${index})" class="delete">
             Delete enrollment
