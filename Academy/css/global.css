@@ -35,6 +35,12 @@ body {
 a {
   color: whitesmoke;
   text-decoration: none;
+
+  transition: opacity .2s ease;
+}
+
+a:hover {
+  opacity: .7;
 }
 
 nav {
@@ -170,5 +176,5 @@ nav {
 }
 
 .button-enrollments.reset::before {
-  background: red;
+  background: rgba(255, 0, 0, 0.541);
 }
