@@ -6,6 +6,12 @@ window.addEventListener('DOMContentLoaded', () => {
   // Function to load and display saved enrollments from localstorage
   function loadSavedData() {
     const enrollments = JSON.parse(localStorage.getItem('enrollments')) || [] // Initialize as empty array
+    if (enrollments.length === 0) {
+      $savedDataContainer.innerHTML =
+        '<p class="p-noenrollments">No enrollments found</p>'
+      return
+    }
+
     $savedDataContainer.innerHTML = enrollments
       .map(
         (data, index) =>
