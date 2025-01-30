@@ -50,7 +50,7 @@ nav {
   border: 2px solid whitesmoke;
   border-radius: 5px;
 
-  background: rgba(245, 245, 245, 0.200);
+  background: rgba(0, 247, 255, 0.329);
 }
 
 .main-container {
@@ -82,10 +82,30 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.4rem;
 
   border: 2px solid whitesmoke;
   border-radius: 10px;
 
-  background: rgba(245, 245, 245, 0.200);
+  background: rgba(0, 247, 255, 0.329);
+
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .2rem;
+
+    input {
+      padding: .4rem;
+  
+      border: none;
+      border-bottom: 2px solid whitesmoke;
+      border-radius: 5px;
+
+      outline: none;
+
+      color: white;
+      background: transparent;
+    }
+  }
 }
