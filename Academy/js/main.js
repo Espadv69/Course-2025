@@ -10,11 +10,13 @@ window.addEventListener('DOMContentLoaded', () => {
       .map(
         (data, index) =>
           `
-        <p>Full Name: <strong>${data.name} ${data.lastname}</strong></p>
-        <p>Degrees: <strong>${data.degree}</strong></p>
-        <button onclick="deleteEnrollment(${index})" class="delete">
-          Delete enrollment
-        </button>
+        <div class="data-saved-content">
+          <p>Full Name: <strong>${data.name} ${data.lastname}</strong></p>
+          <p>Degrees: <strong>${data.degrees}</strong></p>
+          <button onclick="deleteEnrollment(${index})" class="delete">
+            Delete enrollment
+          </button>
+        </div>
       `
       )
       .join('')
@@ -33,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 
   // Function to delete an enrollment
-  window.deleteEnrollmen = (index) => {
+  window.deleteEnrollment = (index) => {
     const enrollments = JSON.parse(localStorage.getItem('enrollments')) || []
     enrollments.splice(index, 1) // Remove selected item
     localStorage.setItem('enrollments', JSON.stringify(enrollments)) // Update localstorage
