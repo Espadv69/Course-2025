@@ -219,3 +219,14 @@ nav {
   color: red;
   text-align: center;
 }
+.port-image {
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: center;
+  gap: .4rem;
+
+  img {
+    width: 100%;
+  }
+}
