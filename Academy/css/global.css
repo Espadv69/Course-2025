@@ -89,6 +89,7 @@ nav {
 
   background: rgba(0, 247, 255, 0.329);
 
+
   label {
     display: flex;
     flex-direction: column;
@@ -97,7 +98,7 @@ nav {
 
     input {
       padding: .4rem;
-  
+
       border: none;
       border-bottom: 2px solid whitesmoke;
       border-radius: 5px;
@@ -108,4 +109,48 @@ nav {
       background: transparent;
     }
   }
+
+}
+
+.button-enrollments {
+  cursor: pointer;
+  position: relative;
+
+  padding: 1rem 1.4rem;
+
+  width: 100%;
+  max-width: 130px;
+
+  letter-spacing: 4px;
+
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+
+  color: currentColor;
+  background: transparent;
+
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button-enrollments::before {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  top: -100%;
+  left: 0;
+
+  border-radius: 100%;
+
+  background: royalblue;
+  transition: all .3s ease-in-out;
+  z-index: -1;
+}
+
+.button-enrollments:hover::before {
+  top: 0;
+  border-radius: 0px;
 }
