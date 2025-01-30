@@ -43,6 +43,7 @@ a:hover {
   opacity: .7;
 }
 
+/* NAVBAR */
 nav {
   margin: auto;
   padding: .4rem .6rem;
@@ -61,6 +62,7 @@ nav {
   background: rgba(0, 247, 255, 0.329);
 }
 
+/* Main container */
 .main-container {
   margin: 1rem auto;
 
@@ -83,6 +85,7 @@ nav {
   gap: 1rem;
 }
 
+/* Enrollments */
 .form-enrollments {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
@@ -219,6 +222,20 @@ nav {
   color: red;
   text-align: center;
 }
+
+/* Home */
+.h2-highschool {
+  margin-top: .5rem;
+
+  text-align: center;
+}
+
+.p-highschool {
+  padding: .3rem .5rem;
+
+  text-align: center;
+}
+
 .port-image {
   margin-top: 1rem;
 
