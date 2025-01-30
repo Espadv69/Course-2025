@@ -16,6 +16,19 @@ window.addEventListener('DOMContentLoaded', () => {
           Delete enrollment
         </button>
       `
-      ).join('')
+      )
+      .join('')
   }
+
+  // Handle form submit
+  $form.addEventListener('submit', (e) => {
+    e.preventDefault()
+
+    const formData = Object.fromEntries(new FormData($form).entries()) // Get form data
+    const enrollments = JSON.parse(localStorage.getItem('enrollments')) || []
+    enrollments.push(formData) // Add new enrollment
+    localStorage.setItem('enrollments', JSON.stringify(enrollments)) // Saved to localstorage
+    $form.reset() // Clear form
+    loadSavedData()
+  })
 })
