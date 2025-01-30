@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
           `
         <p>Full Name: <strong>${data.name} ${data.lastname}</strong></p>
         <p>Degrees: <strong>${data.degree}</strong></p>
-        <button onclick="deleteEnrollments(${index})" class="delete">
+        <button onclick="deleteEnrollment(${index})" class="delete">
           Delete enrollment
         </button>
       `
@@ -31,4 +31,14 @@ window.addEventListener('DOMContentLoaded', () => {
     $form.reset() // Clear form
     loadSavedData()
   })
+
+  // Function to delete an enrollment
+  window.deleteEnrollmen = (index) => {
+    const enrollments = JSON.parse(localStorage.getItem('enrollments')) || []
+    enrollments.splice(index, 1) // Remove selected item
+    localStorage.setItem('enrollments', JSON.stringify(enrollments)) // Update localstorage
+    loadSavedData() // Refresh
+  }
+
+  loadSavedData() // Load when the page init
 })
