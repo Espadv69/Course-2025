@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
             Delete enrollment
           </button>
         </div>
-      `
+      `,
       )
       .join('')
   }
