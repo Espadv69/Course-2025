@@ -332,11 +332,30 @@ nav {
 
   overflow-y: auto;
 
-  .exit-container {
+  .body-container {
+    margin-bottom: 1rem;
+
+    h3 {
+      border-bottom: 2px solid lightblue;
+    }
+
+    .p-hours {
+      margin-top: 0.4rem;
+
+      width: 35%;
+
+      text-align: center;
+
+      border-top: 2px solid whitesmoke;
+      border-bottom: 2px solid whitesmoke;
+    }
+  }
+
+  .footer-container {
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
-    gap: .4rem;
+    gap: 0.4rem;
   }
 
   .exit,
@@ -358,5 +377,6 @@ nav {
 
   .add {
     width: 30%;
+    border-color: royalblue;
   }
 }
