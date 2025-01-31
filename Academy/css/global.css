@@ -256,6 +256,7 @@ nav {
 
   button {
     cursor: pointer;
+    width: 40%;
     padding: .5rem;
 
     border: 2px solid lightskyblue;
@@ -264,6 +265,16 @@ nav {
     color: currentColor;
     background: transparent;
   }
+}
+
+.course1,
+.course2,
+.course3 {
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .table {
