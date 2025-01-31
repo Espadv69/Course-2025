@@ -316,18 +316,34 @@ nav {
 .course1-container,
 .course2-container,
 .course3-container {
-  position: absolute;
-  width: 100%;
-  min-height: 100dvh;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  padding: 1.4rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 90%;
 
-  background: #000;
+  border-radius: 10px;
+
+  background: #009c82;
   z-index: 2;
+
+  overflow-y: auto;
+
+  .exit {
+    cursor: pointer;
+
+    padding: .5rem .1rem;
+    
+    width: 20%;
+
+    font-weight: bold;
+
+    border: 2px solid royalblue;
+    border-radius: 5px;
+
+    color: whitesmoke;
+    background: #68686857;
+  }
 }
