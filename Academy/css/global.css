@@ -66,7 +66,7 @@ nav {
 /* Main container */
 .main-container {
   margin: 1rem auto;
-  padding: .3rem;
+  padding: 0.3rem;
 
   width: 100%;
   max-width: 450px;
@@ -257,7 +257,7 @@ nav {
   button {
     cursor: pointer;
     width: 40%;
-    padding: .5rem;
+    padding: 0.5rem;
 
     border: 2px solid lightskyblue;
     border-radius: 5px;
@@ -279,7 +279,7 @@ nav {
 
 .table-container {
   margin-top: 1rem;
-  padding: .4rem;
+  padding: 0.4rem;
 
   width: 100%;
 
@@ -288,7 +288,7 @@ nav {
 
   button {
     cursor: pointer;
-    padding: .4rem;
+    padding: 0.4rem;
 
     width: 40%;
 
@@ -308,7 +308,7 @@ nav {
 
   th,
   td {
-    padding: .4rem;
+    padding: 0.4rem;
     border: 1px solid lightskyblue;
   }
 }
@@ -322,7 +322,8 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 90%;
+  width: 100%;
+  max-width: 400px;
 
   border-radius: 10px;
 
@@ -331,19 +332,31 @@ nav {
 
   overflow-y: auto;
 
-  .exit {
+  .exit-container {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: .4rem;
+  }
+
+  .exit,
+  .add {
     cursor: pointer;
 
-    padding: .5rem .1rem;
-    
+    padding: 0.5rem 0.1rem;
+
     width: 20%;
 
     font-weight: bold;
 
-    border: 2px solid royalblue;
+    border: 2px solid rgb(240, 68, 125);
     border-radius: 5px;
 
     color: whitesmoke;
     background: #68686857;
+  }
+
+  .add {
+    width: 30%;
   }
 }
