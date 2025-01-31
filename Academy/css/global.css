@@ -277,10 +277,20 @@ nav {
   flex-wrap: wrap;
 }
 
-.table {
+.table-container {
   margin-top: 1rem;
+  padding: .4rem;
 
   width: 100%;
+
+  background: #004d5a49;
+  box-sizing: content-box;
+}
+
+.table {
+  margin: 1rem auto;
+
+  width: 90%;
   border-collapse: collapse;
 
   th,
