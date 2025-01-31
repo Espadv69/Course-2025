@@ -285,6 +285,19 @@ nav {
 
   background: #004d5a49;
   box-sizing: content-box;
+
+  button {
+    cursor: pointer;
+    padding: .4rem;
+
+    width: 40%;
+
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+
+    color: rgb(127, 223, 255);
+    background: transparent;
+  }
 }
 
 .table {
