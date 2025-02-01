@@ -1,63 +1,79 @@
 window.addEventListener('DOMContentLoaded', () => {
-  //DOM elements
-  const $btnCourse1 = document.querySelector('.course1')
-  const $btnCourse2 = document.querySelector('.course2')
-  const $btnCourse3 = document.querySelector('.course3')
+  // DOM elements
+  const $tbody = document.querySelector('.tbody-assess')
   const $exitButtons = document.querySelectorAll('.exit')
   const $addButtons = document.querySelectorAll('.add')
-  const $tbody = document.querySelector('.tbody-assess')
-  const $course1_content = document.querySelector('.course1-container')
-  const $course2_content = document.querySelector('.course2-container')
-  const $course3_content = document.querySelector('.course3-container')
 
-  // Initialize hidden
+  // Mapea los botones de los cursos a sus respectivos contenedores
+  const courseButtons = {
+    '.course1': '.course1-container',
+    '.course2': '.course2-container',
+    '.course3': '.course3-container',
+  }
+
+  // Función para ocultar todos los cursos
   function hideAllCourses() {
-    $course1_content.style.display = 'none'
-    $course2_content.style.display = 'none'
-    $course3_content.style.display = 'none'
+    Object.values(courseButtons).forEach((selector) => {
+      document.querySelector(selector).style.display = 'none'
+    })
   }
 
-  hideAllCourses() // Close all tabs when it's initialize
+  hideAllCourses() // Ocultar todos los cursos al inicio
 
-  // Function to add course data to the table
-  function addToTable(courseContainer) {
-    const courseName = courseContainer.querySelector('h3').textContent
-    const hours = courseContainer.querySelector('.p-hours strong').textContent
-
-    // Create a new row
-    const row = document.createElement('tr')
-    row.innerHTML = `
-      <td>${courseName}</td>
-      <td>${hours}</td>
-      <td></td>
-    `
-
-    // Append the row to the table body
-    $tbody.appendChild(row)
-  }
-
-  $btnCourse1.addEventListener('click', () => {
-    hideAllCourses()
-    $course1_content.style.display = 'block'
+  // Agregar evento a los botones de curso para mostrar el curso correspondiente
+  Object.entries(courseButtons).forEach(([buttonClass, containerSelector]) => {
+    document.querySelector(buttonClass).addEventListener('click', () => {
+      hideAllCourses()
+      document.querySelector(containerSelector).style.display = 'block'
+    })
   })
 
-  $btnCourse2.addEventListener('click', () => {
-    hideAllCourses()
-    $course2_content.style.display = 'block'
-  })
-
-  $btnCourse3.addEventListener('click', () => {
-    hideAllCourses()
-    $course3_content.style.display = 'block'
-  })
-
+  // Cerrar cursos cuando se haga clic en "Exit"
   $exitButtons.forEach((button) => {
     button.addEventListener('click', hideAllCourses)
   })
 
+  // Función para agregar información a la tabla
+  function addToTable(courseContainer) {
+    if (!courseContainer) {
+      console.error('Course container not found')
+      return
+    }
+
+    const courseNameElement = courseContainer.querySelector('h3')
+    const hoursElement = courseContainer.querySelector('.p-hours strong')
+
+    if (!courseNameElement || !hoursElement) {
+      console.error('Missing course name or hours')
+      return
+    }
+
+    const courseName = courseNameElement.textContent.trim()
+    const hours = hoursElement.textContent.trim()
+
+    // Crear una nueva fila
+    const row = document.createElement('tr')
+    row.innerHTML = `
+      <td>${courseName}</td>
+      <td>${hours}</td>
+      <td>-</td>
+    `
+
+    // Agregar la fila al tbody de la tabla
+    $tbody.appendChild(row)
+  }
+
+  // Agregar eventos a los botones "Add to Table"
   $addButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
-      const courseContainer = event.target.closest('div[class$="-container"]')
+      const courseContainer =
+        event.target.closest('.footer-container')?.parentElement
+
+      if (!courseContainer) {
+        console.error('Course container not found for button:', event.target)
+        return
+      }
+
       addToTable(courseContainer)
     })
   })
