@@ -1,26 +1,26 @@
 window.addEventListener('DOMContentLoaded', () => {
-  // DOM elements
+  // 1. DOM elements
   const $tbody = document.querySelector('.tbody-assess')
   const $exitButtons = document.querySelectorAll('.exit')
   const $addButtons = document.querySelectorAll('.add')
 
-  // Mapea los botones de los cursos a sus respectivos contenedores
+  // 2. Buttons Map: Mapea cada botón de curso a su contenedor correspondiente
   const courseButtons = {
     '.course1': '.course1-container',
     '.course2': '.course2-container',
     '.course3': '.course3-container',
   }
 
-  // Función para ocultar todos los cursos
+  // 3. Function to hide all courses
   function hideAllCourses() {
     Object.values(courseButtons).forEach((selector) => {
       document.querySelector(selector).style.display = 'none'
     })
   }
 
-  hideAllCourses() // Ocultar todos los cursos al inicio
+  hideAllCourses() // Hide all course containers on load
 
-  // Agregar evento a los botones de curso para mostrar el curso correspondiente
+  // 4. Event to show courses modal
   Object.entries(courseButtons).forEach(([buttonClass, containerSelector]) => {
     document.querySelector(buttonClass).addEventListener('click', () => {
       hideAllCourses()
@@ -28,12 +28,12 @@ window.addEventListener('DOMContentLoaded', () => {
     })
   })
 
-  // Cerrar cursos cuando se haga clic en "Exit"
+  // 5. Event to hide courses when clicking "Exit"
   $exitButtons.forEach((button) => {
     button.addEventListener('click', hideAllCourses)
   })
 
-  // Función para agregar información a la tabla
+  // 6. Function to add data to the table
   function addToTable(courseContainer) {
     if (!courseContainer) {
       console.error('Course container not found')
@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const courseName = courseNameElement.textContent.trim()
     const hours = hoursElement.textContent.trim()
 
-    // Crear una nueva fila
+    // Create a new table row and insert course data
     const row = document.createElement('tr')
     row.innerHTML = `
       <td>${courseName}</td>
@@ -59,16 +59,15 @@ window.addEventListener('DOMContentLoaded', () => {
       <td>-</td>
     `
 
-    // Agregar la fila al tbody de la tabla
     $tbody.appendChild(row)
   }
 
-  // Agregar eventos a los botones "Add to Table"
+  // 7. Add event to "Add to table" buttons
   $addButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
+      // Find the closest course container by going from the footer to its parent
       const courseContainer =
         event.target.closest('.footer-container')?.parentElement
-
       if (!courseContainer) {
         console.error('Course container not found for button:', event.target)
         return
