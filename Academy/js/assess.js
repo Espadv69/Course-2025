@@ -54,4 +54,11 @@ window.addEventListener('DOMContentLoaded', () => {
   $exitButtons.forEach((button) => {
     button.addEventListener('click', hideAllCourses)
   })
+
+  $addButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      const courseContainer = event.target.closest('div[class$="-container"]')
+      addToTable(courseContainer)
+    })
+  })
 })
