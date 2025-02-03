@@ -11,6 +11,9 @@ window.addEventListener('DOMContentLoaded', () => {
     '.course3': '.course3-container',
   }
 
+  const MAX_COURSE_COUNT = 1
+  const courseCount = {}
+
   // 3. Function to hide all courses
   function hideAllCourses() {
     Object.values(courseButtons).forEach((selector) => {
@@ -50,6 +53,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const courseName = courseNameElement.textContent.trim()
     const hours = hoursElement.textContent.trim()
+
+    if (courseCount[courseName] >= MAX_COURSE_COUNT) {
+      alert(`You can only add ${courseName} (${MAX_COURSE_COUNT}) time(s)`)
+      return
+    }
+
+    courseCount[courseName] = (courseCount[courseName] || 0) + 1
 
     // Create a new table row and insert course data
     const row = document.createElement('tr')
