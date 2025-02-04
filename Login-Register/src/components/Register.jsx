@@ -18,6 +18,11 @@ const Register = () => {
       alert('Email already registered or Username already taken')
       return
     }
+
+    users.push({ username, email, pass })
+    localStorage.setItem('users', JSON.stringify(users))
+    alert('Registration successful!')
+    navigate('/')
   }
 
   const handleUser = (e) => {
@@ -38,7 +43,7 @@ const Register = () => {
   return (
     <div className="register_page">
       <h1 className="h1-title">Register</h1>
-      <form>
+      <form onSubmit={handleRegister}>
         <input
           type="text"
           value={username}
