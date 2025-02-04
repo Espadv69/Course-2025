@@ -42,3 +42,11 @@
 .nav-links a:hover {
   text-decoration: underline;
 }
+
+.menu-icon {
+  cursor: pointer;
+
+  font-size: 30px;
+
+  display: none;
+}
