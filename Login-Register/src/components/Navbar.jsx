@@ -8,10 +8,6 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 900)
 
-  const handleMenu = () => {
-    setMenuOpen(!menuOpen)
-  }
-
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 900)
     window.addEventListener('resize', handleResize)
@@ -23,7 +19,9 @@ const Navbar = () => {
       <div className="logo">React Academy</div>
 
       {isMobile && (
-        <div className="menu-icon">{menuOpen ? <FiX /> : <FiMenu />}</div>
+        <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <FiX /> : <FiMenu />}
+        </div>
       )}
 
       <ul
@@ -32,22 +30,22 @@ const Navbar = () => {
         }`}
       >
         <li>
-          <Link to="/dashboard" onClick={handleMenu}>
+          <Link to="/dashboard" onClick={() => setMenuOpen(false)}>
             Dashboard
           </Link>
         </li>
         <li>
-          <Link to="/about" onClick={handleMenu}>
+          <Link to="/about" onClick={() => setMenuOpen(false)}>
             About
           </Link>
         </li>
         <li>
-          <Link to="/services" onClick={handleMenu}>
+          <Link to="/services" onClick={() => setMenuOpen(false)}>
             Services
           </Link>
         </li>
         <li>
-          <Link to="/contact" onClick={handleMenu}>
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>
             Contact
           </Link>
         </li>
