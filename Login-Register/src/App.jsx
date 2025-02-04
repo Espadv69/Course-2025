@@ -5,9 +5,14 @@ import {
   useLocation,
 } from 'react-router-dom'
 
+import Navbar from './components/Navbar'
 import Login from './components/Login'
 import Register from './components/Register'
+
 import Dashboard from './components/Dashboard'
+import Contact from './components/Contact'
+import Services from './components/Services'
+import About from './components/About'
 
 function Layout() {
   const location = useLocation()
