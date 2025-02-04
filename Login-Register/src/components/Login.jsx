@@ -36,7 +36,7 @@ const Login = () => {
   return (
     <div className="login_page">
       <h1 className="h1-title">Login</h1>
-      <form>
+      <form onSubmit={handleLogin}>
         <input
           type="text"
           value={identifier}
