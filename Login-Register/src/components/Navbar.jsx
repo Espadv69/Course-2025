@@ -26,7 +26,11 @@ const Navbar = () => {
         <div className="menu-icon">{menuOpen ? <FiX /> : <FiMenu />}</div>
       )}
 
-      <ul>
+      <ul
+        className={`nav-links ${isMobile && menuOpen ? 'open' : ''} ${
+          isMobile ? 'mobile' : ''
+        }`}
+      >
         <li>
           <Link to="/dashboard" onClick={handleMenu}>
             Dashboard
