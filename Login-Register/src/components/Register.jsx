@@ -11,11 +11,13 @@ const Register = () => {
     e.preventDefault()
     const users = JSON.parse(localStorage.getItem('users')) || [] // Initialize as an empty array
 
-    if (
-      users.some((user) => user.email === email) ||
-      users.some((user) => user.username === username)
-    ) {
-      alert('Email already registered or Username already taken')
+    if (users.some((user) => user.email === email)) {
+      alert('Email already registered')
+      return
+    }
+
+    if (users.some((user) => user.username === username)) {
+      alert('Username already taken')
       return
     }
 
