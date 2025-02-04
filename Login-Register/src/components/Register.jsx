@@ -69,7 +69,7 @@ const Register = () => {
         />
         <button>Register</button>
         <p>
-          If you have an account{' '}
+          If you already have an account{' '}
           <a
             href="/"
             onClick={(e) => {
