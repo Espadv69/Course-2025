@@ -7,11 +7,17 @@ const Register = () => {
   const [pass, setPass] = useState('') // Input pass
   const navigate = useNavigate()
 
+  const handleUser = (e) => {
+    const value = e.target.value
+    console.log(value)
+    setUser(value)
+  }
+
   return (
     <div className="register_page">
       <h1 className="h1-title">Register</h1>
       <form>
-        <input type="text" />
+        <input type="text" value={user} onChange={handleUser} placeholder='Username'/>
         <input type="text" />
         <input type="text" />
         <button>Register</button>
