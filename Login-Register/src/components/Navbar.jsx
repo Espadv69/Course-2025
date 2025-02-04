@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { FiMenu, Fix } from 'react-icons/fi'
+import { FiMenu, FiX } from 'react-icons/fi'
 
 import '../css/Navbar.css'
 
@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="logo">React Academy</div>
 
       {isMobile && (
-        <div className="menu-icon">{menuOpen ? <Fix /> : <FiMenu />}</div>
+        <div className="menu-icon">{menuOpen ? <FiX /> : <FiMenu />}</div>
       )}
 
       <ul>
