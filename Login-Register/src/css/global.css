@@ -23,5 +23,22 @@ body {
     'Open Sans',
     'Helvetica Neue',
     sans-serif;
-  color: #121212;
+
+  min-height: 100dvh;
+
+  color: white;
+  background: linear-gradient(to left, #87CEFA, #4682B4);
+}
+
+.h1-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
