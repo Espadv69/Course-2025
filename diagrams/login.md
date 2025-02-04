@@ -4,6 +4,7 @@ graph TD;
   B --> C{Are the data valid?}
   C -- No --> B
   C -- Yes --> D[Show success message]
-  D --> E[Redirect to dashboard page]
-  E --> F[End]
+  D --> E[Save to localStorage]
+  E --> F[Redirect to dashboard page]
+  F --> G[End]
 ```
