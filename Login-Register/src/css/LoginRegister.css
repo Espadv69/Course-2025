@@ -1,0 +1,24 @@
+.form_login {
+  margin: 2rem auto;
+  padding: 4rem 1rem;
+
+  width: 100%;
+  max-width: 700px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+
+  border: 1px solid white;
+  background: rgba(173, 216, 230, 0.400);
+
+  input {
+    padding: 1rem .5rem;
+    width: 50%;
+  }
+
+  button {
+    width: 30%;
+  }
+}
