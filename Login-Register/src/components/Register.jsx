@@ -51,7 +51,7 @@ const Register = () => {
           placeholder="Username"
         />
         <input
-          type="text"
+          type="email"
           value={email}
           onChange={handleEmail}
           placeholder="name@example.com"
