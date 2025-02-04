@@ -82,4 +82,9 @@
   button:hover {
     color: royalblue;
   }
+
+  a {
+    font-weight: 800;
+    color: royalblue;
+  }
 }
