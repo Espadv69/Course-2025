@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+import '../css/Login.css'
+
 const Login = () => {
   const [identifier, setIdentifier] = useState('') // Can be email or email
   const [pass, setPass] = useState('')
@@ -36,7 +38,7 @@ const Login = () => {
   return (
     <div className="login_page">
       <h1 className="h1-title">Login</h1>
-      <form onSubmit={handleLogin}>
+      <form className='form_login' onSubmit={handleLogin}>
         <input
           type="text"
           value={identifier}
