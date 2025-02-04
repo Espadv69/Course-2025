@@ -1,6 +1,9 @@
 ```mermaid
 graph TD;
   A[Start] --> B[Login Form]
-  C[Email input]
-  D[Pass input]
+  B --> C{Are the data valid?}
+  C -- No --> B
+  C -- Yes --> D[Show success message]
+  D --> E[Redirect to dashboard page]
+  E --> F[End]
 ```
