@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import '../css/Login.css'
+import '../css/LoginRegister.css'
 
 const Login = () => {
   const [identifier, setIdentifier] = useState('') // Can be email or email
