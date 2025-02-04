@@ -2,14 +2,27 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Register = () => {
-  const [user, setUser] = useState('') // Input user
+  const [username, setUsername] = useState('') // Input user
   const [email, setEmail] = useState('') // Input email
   const [pass, setPass] = useState('') // Input pass
   const navigate = useNavigate()
 
+  const handleRegister = (e) => {
+    e.preventDefault()
+    const users = JSON.parse(localStorage.getItem('users')) || [] // Initialize as an empty array
+
+    if (
+      users.some((user) => user.email === email) ||
+      users.some((user) => user.username === username)
+    ) {
+      alert('Email already registered or Username already taken')
+      return
+    }
+  }
+
   const handleUser = (e) => {
     const value = e.target.value
-    setUser(value)
+    setUsername(value)
   }
 
   const handleEmail = (e) => {
@@ -28,7 +41,7 @@ const Register = () => {
       <form>
         <input
           type="text"
-          value={user}
+          value={username}
           onChange={handleUser}
           placeholder="Username"
         />
