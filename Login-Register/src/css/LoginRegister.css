@@ -1,8 +1,10 @@
-.login_page {
+.login_page,
+.register_page {
   padding: 1rem;
 }
 
-.form_login {
+.form_login,
+.form_register {
   margin: 2rem auto;
   padding: 4rem 1rem;
 
