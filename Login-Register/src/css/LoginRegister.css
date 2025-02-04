@@ -1,3 +1,7 @@
+.login_page {
+  padding: 1rem;
+}
+
 .form_login {
   margin: 2rem auto;
   padding: 4rem 1rem;
@@ -11,11 +15,25 @@
   gap: .5rem;
 
   border: 1px solid white;
+  border-radius: 10px;
+
   background: rgba(173, 216, 230, 0.400);
 
   input {
     padding: 1rem .5rem;
     width: 50%;
+
+    border: 0px;
+    border-bottom: 2px solid whitesmoke;
+    border-radius: 5px;
+    outline: none;
+
+    color: white;
+    background: transparent;
+  }
+
+  input::placeholder {
+    color: white;
   }
 
   button {
