@@ -9,8 +9,14 @@ const Register = () => {
 
   const handleUser = (e) => {
     const value = e.target.value
-    console.log(value)
+    console.log('Input user:', value)
     setUser(value)
+  }
+
+  const handleEmail = (e) => {
+    const value = e.target.value
+    console.log('Input email:', value)
+    setEmail(value)
   }
 
   return (
@@ -18,7 +24,7 @@ const Register = () => {
       <h1 className="h1-title">Register</h1>
       <form>
         <input type="text" value={user} onChange={handleUser} placeholder='Username'/>
-        <input type="text" />
+        <input type="text" value={email} onChange={handleEmail} placeholder='name@example.com' />
         <input type="text" />
         <button>Register</button>
         <p>
