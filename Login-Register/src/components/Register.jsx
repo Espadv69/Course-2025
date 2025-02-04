@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+
 const Register = () => {
   const [user, setUser] = useState('') // Input user
   const [email, setEmail] = useState('') // Input email
