@@ -9,19 +9,16 @@ const Register = () => {
 
   const handleUser = (e) => {
     const value = e.target.value
-    console.log('Input user:', value)
     setUser(value)
   }
 
   const handleEmail = (e) => {
     const value = e.target.value
-    console.log('Input email:', value)
     setEmail(value)
   }
 
   const handlePassword = (e) => {
     const value = e.target.value
-    console.log('Input Password:', value)
     setPass(value)
   }
 
