@@ -8,24 +8,27 @@ const Register = () => {
   const navigate = useNavigate()
 
   return (
-    <form>
-      <input type="text" />
-      <input type="text" />
-      <input type="text" />
-      <button>Register</button>
-      <p>
-        If you have an account{' '}
-        <a
-          href="/"
-          onClick={(e) => {
-            e.preventDefault()
-            navigate('/')
-          }}
-        >
-          click here
-        </a>
-      </p>
-    </form>
+    <div className="register_page">
+      <h1 className="h1-title">Register</h1>
+      <form>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <button>Register</button>
+        <p>
+          If you have an account{' '}
+          <a
+            href="/"
+            onClick={(e) => {
+              e.preventDefault()
+              navigate('/')
+            }}
+          >
+            click here
+          </a>
+        </p>
+      </form>
+    </div>
   )
 }
 
