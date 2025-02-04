@@ -50,3 +50,31 @@
 
   display: none;
 }
+
+@media screen and (max-width: 900px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    flex-direction: column;
+
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links.mobile li {
+    padding: 15px 0px;
+  }
+}
