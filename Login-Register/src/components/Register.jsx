@@ -49,18 +49,21 @@ const Register = () => {
           value={username}
           onChange={handleUser}
           placeholder="Username"
+          required
         />
         <input
           type="email"
           value={email}
           onChange={handleEmail}
           placeholder="name@example.com"
+          required
         />
         <input
           type="password"
           value={pass}
           onChange={handlePassword}
           placeholder="Password"
+          required
         />
         <button>Register</button>
         <p>
