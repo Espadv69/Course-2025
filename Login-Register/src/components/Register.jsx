@@ -19,13 +19,34 @@ const Register = () => {
     setEmail(value)
   }
 
+  const handlePassword = (e) => {
+    const value = e.target.value
+    console.log('Input Password:', value)
+    setPass(value)
+  }
+
   return (
     <div className="register_page">
       <h1 className="h1-title">Register</h1>
       <form>
-        <input type="text" value={user} onChange={handleUser} placeholder='Username'/>
-        <input type="text" value={email} onChange={handleEmail} placeholder='name@example.com' />
-        <input type="text" />
+        <input
+          type="text"
+          value={user}
+          onChange={handleUser}
+          placeholder="Username"
+        />
+        <input
+          type="text"
+          value={email}
+          onChange={handleEmail}
+          placeholder="name@example.com"
+        />
+        <input
+          type="password"
+          value={pass}
+          onChange={handlePassword}
+          placeholder="Password"
+        />
         <button>Register</button>
         <p>
           If you have an account{' '}
