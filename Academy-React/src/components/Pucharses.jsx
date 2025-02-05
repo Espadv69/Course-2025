@@ -43,24 +43,26 @@ const Pucharses = () => {
           <option value="Saturday">Saturday</option>
           <option value="Sunday">Sunday</option>
         </select>
-        <input
-          type="text"
-          value={item}
-          onChange={(e) => setItem(e.target.value)}
-          placeholder="Item"
-        />
-        <input
-          type="number"
-          value={quantity}
-          onChange={(e) => setQuantity(e.target.value)}
-          placeholder="Quantity"
-        />
-        <input
-          type="number"
-          value={price}
-          onChange={(e) => setPrice(e.target.value)}
-          placeholder="Unit Price"
-        />
+        <div className="form_input">
+          <input
+            type="text"
+            value={item}
+            onChange={(e) => setItem(e.target.value)}
+            placeholder="Item"
+          />
+          <input
+            type="number"
+            value={quantity}
+            onChange={(e) => setQuantity(e.target.value)}
+            placeholder="Quantity"
+          />
+          <input
+            type="number"
+            value={price}
+            onChange={(e) => setPrice(e.target.value)}
+            placeholder="Unit Price"
+          />
+        </div>
         <button onClick={addRow}>Add</button>
       </div>
 
