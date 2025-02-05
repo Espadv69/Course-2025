@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
 
 .welcome__dashboard {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@
 
   button {
     font-family: 'Roboto';
-    padding: .6rem;
+    padding: 0.6rem;
 
     width: 100px;
 
