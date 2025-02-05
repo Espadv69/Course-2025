@@ -36,7 +36,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="/pucharses" onClick={() => setMenuOpen(false)}>
-            Pucharses
+            Weekly Pucharses
           </Link>
         </li>
         <li>
