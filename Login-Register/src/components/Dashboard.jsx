@@ -26,7 +26,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <div className='welcome__dashboard'>
+      <div className="welcome__dashboard">
         <h2>Welcome {user?.username}</h2>
         <button type="button" onClick={handleLogOut}>
           Log Out
