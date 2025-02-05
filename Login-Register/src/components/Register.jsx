@@ -15,16 +15,16 @@ const Register = () => {
     const $invalid_username = document.querySelector('.invalid_username')
     $invalid_email.textContent = ''
     $invalid_username.textContent = ''
-    
-    const users = JSON.parse(localStorage.getItem('users')) || [] // Initialize as an empty array
 
-    if (users.some((user) => user.email === email)) {
-      $invalid_email.textContent = 'Email already registered'
-      return
-    }
+    const users = JSON.parse(localStorage.getItem('users')) || [] // Initialize as an empty array
 
     if (users.some((user) => user.username === username)) {
       $invalid_username.textContent = 'Username already taken'
+      return
+    }
+
+    if (users.some((user) => user.email === email)) {
+      $invalid_email.textContent = 'Email already registered'
       return
     }
 
@@ -60,7 +60,7 @@ const Register = () => {
           placeholder="Username"
           required
         />
-        <p className="invalid_username"></p>
+        <p className="invalid_username" style={{ color: 'royalblue' }}></p>
         <input
           type="email"
           value={email}
@@ -68,7 +68,7 @@ const Register = () => {
           placeholder="name@example.com"
           required
         />
-        <p className="invalid_email"></p>
+        <p className="invalid_email" style={{ color: 'royalblue' }}></p>
         <input
           type="password"
           value={pass}
