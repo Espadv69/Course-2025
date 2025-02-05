@@ -10,6 +10,19 @@ const Pucharses = () => {
 
   const [rows, setRows] = useState([])
 
+  const addRow = () => {
+    if (day && item && quantity && price) {
+      const total = parseFloat(quantity) * parseFloat(price)
+      setRows([...rows, { day, item, quantity, price, total }])
+
+      // Clean up
+      setDay('')
+      setItem('')
+      setQuantity('')
+      setPrice('')
+    }
+  }
+
   return (
     <div>
       <h2 style={{ textAlign: 'center' }}>Weekly Pucharses Record</h2>
