@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+import '../css/Dashboard.css'
+
 const Dashboard = () => {
   const [user, setUser] = useState(null)
   const navigate = useNavigate()
@@ -20,10 +22,12 @@ const Dashboard = () => {
   }
   return (
     <div>
-      <h2>Welcome {user?.username}</h2>
-      <button type="button" onClick={handleLogOut}>
-        Log Out
-      </button>
+      <div className='welcome__dashboard'>
+        <h2>Welcome {user?.username}</h2>
+        <button type="button" onClick={handleLogOut}>
+          Log Out
+        </button>
+      </div>
     </div>
   )
 }
