@@ -14,7 +14,8 @@ const Login = () => {
 
     const user = users.find(
       (u) =>
-        (u.email === identifier || u.username === identifier) && u.pass === pass
+        (u.email === identifier || u.username === identifier) &&
+        u.pass === pass,
     )
 
     if (user) {
@@ -38,7 +39,7 @@ const Login = () => {
   return (
     <div className="login_page">
       <h1 className="h1-title">Login</h1>
-      <form className='form_login' onSubmit={handleLogin}>
+      <form className="form_login" onSubmit={handleLogin}>
         <input
           type="text"
           value={identifier}
