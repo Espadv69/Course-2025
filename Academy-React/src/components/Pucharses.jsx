@@ -3,11 +3,15 @@ const Pucharses = () => {
     <table>
       <thead>
         <tr>
-          <th>item</th>
-          <th>item</th>
-          <th>item</th>
+          <th>Date</th>
+          <th>Concept</th>
+          <th>Unity</th>
+          <th>Cost</th>
+          <th>Amount</th>
+          <th>Balance</th>
         </tr>
       </thead>
+      <tbody className="tbody"></tbody>
     </table>
   )
 }
