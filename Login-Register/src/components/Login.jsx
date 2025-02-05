@@ -55,7 +55,7 @@ const Login = () => {
           required
         />
         <button>Login</button>
-        <p style={{ color: 'red' }} className="invalid"></p>
+        <p style={{ color: 'royalblue' }} className="invalid"></p>
         <p>
           If you don't have an account yet{' '}
           <a
