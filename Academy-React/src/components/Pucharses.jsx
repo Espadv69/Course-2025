@@ -23,6 +23,10 @@ const Pucharses = () => {
     }
   }
 
+  const deleteRow = (index) => {
+    setRows(rows.filter((_, i) => i !== index))
+  }
+
   return (
     <div>
       <h2 style={{ textAlign: 'center' }}>Weekly Pucharses Record</h2>
