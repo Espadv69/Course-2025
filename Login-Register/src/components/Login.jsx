@@ -14,15 +14,15 @@ const Login = () => {
 
     const user = users.find(
       (u) =>
-        (u.email === identifier || u.username === identifier) &&
-        u.pass === pass,
+        (u.email === identifier || u.username === identifier) && u.pass === pass
     )
 
     if (user) {
       localStorage.setItem('loggedInUser', JSON.stringify(user))
       navigate('/dashboard')
     } else {
-      alert('Invalid credentials')
+      const $invalid = document.querySelector('.invalid')
+      $invalid.textContent = 'Invalid credentials'
     }
   }
 
@@ -55,6 +55,7 @@ const Login = () => {
           required
         />
         <button>Login</button>
+        <p style={{ color: 'red' }} className="invalid"></p>
         <p>
           If you don't have an account yet{' '}
           <a
