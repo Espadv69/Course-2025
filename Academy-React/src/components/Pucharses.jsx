@@ -3,16 +3,16 @@ import '../css/Pucharses.css'
 const Pucharses = () => {
   return (
     <div>
-      <h2>Weekly Pucharses</h2>
+      <h2 style={{ textAlign: 'center' }}>Weekly Pucharses Record</h2>
       <table className="table_pucharses">
         <thead>
           <tr>
-            <th>Date</th>
-            <th>Concept</th>
-            <th>Unity</th>
-            <th>Cost</th>
-            <th>Amount</th>
-            <th>Balance</th>
+            <th>Day</th>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Total</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody className="tbody"></tbody>
