@@ -58,7 +58,7 @@
 
   .nav-links {
     position: absolute;
-    top: 60px;
+    top: 67px;
     left: 0;
 
     width: 100%;
@@ -76,5 +76,10 @@
 
   .nav-links.mobile li {
     padding: 15px 0px;
+  }
+
+  .nav-links.mobile {
+    background: rgba(173, 216, 230, 0.158);
+    backdrop-filter: blur(8px);
   }
 }
