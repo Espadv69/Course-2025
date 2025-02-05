@@ -1,0 +1,28 @@
+/* Smooch Sans font-family */
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+.welcome__dashboard {
+  padding: .5rem 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    font-family: 'Roboto';
+    padding: .6rem;
+
+    width: 100px;
+
+    border: 2px solid royalblue;
+    border-radius: 4px;
+
+    color: royalblue;
+    background: transparent;
+  }
+
+  h2 {
+    font-family: 'Smooch Sans';
+    font-size: 32px;
+  }
+}
