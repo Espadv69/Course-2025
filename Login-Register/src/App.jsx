@@ -10,8 +10,8 @@ import Login from './components/Login'
 import Register from './components/Register'
 
 import Dashboard from './components/Dashboard'
+import Shopping from './components/Shopping'
 import Contact from './components/Contact'
-import Services from './components/Services'
 import About from './components/About'
 
 function Layout() {
@@ -26,7 +26,7 @@ function Layout() {
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/shopping" element={<Shopping />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
