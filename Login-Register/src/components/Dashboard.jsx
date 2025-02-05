@@ -17,9 +17,13 @@ const Dashboard = () => {
   }, [navigate])
 
   const handleLogOut = () => {
-    localStorage.removeItem('loggedInUser')
-    navigate('/')
+    const logOut = window.confirm('Are you sure you want log out?')
+    if (logOut) {
+      localStorage.removeItem('loggedInUser')
+      navigate('/')
+    }
   }
+
   return (
     <div>
       <div className='welcome__dashboard'>
