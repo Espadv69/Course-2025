@@ -76,6 +76,20 @@ const Pucharses = () => {
               <th>Action</th>
             </tr>
           </thead>
+          <tbody>
+            {rows.map((row, index) => (
+              <tr key={index}>
+                <td>{row.day}</td>
+                <td>{row.item}</td>
+                <td>{row.quantity}</td>
+                <td>{row.price}</td>
+                <td>{row.total}</td>
+                <td>
+                  <button onClick={() => deleteRow(index)}>Delete</button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
     </div>
