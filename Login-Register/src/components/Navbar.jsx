@@ -35,13 +35,13 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/about" onClick={() => setMenuOpen(false)}>
-            About
+          <Link to="/shopping" onClick={() => setMenuOpen(false)}>
+            Shopping
           </Link>
         </li>
         <li>
-          <Link to="/services" onClick={() => setMenuOpen(false)}>
-            Services
+          <Link to="/about" onClick={() => setMenuOpen(false)}>
+            About
           </Link>
         </li>
         <li>
