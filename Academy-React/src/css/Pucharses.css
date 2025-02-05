@@ -1,11 +1,22 @@
-.table_pucharses {
-  margin: .8rem auto;
-  width: 90%;
+.table-container {
+  overflow-x: auto;
+}
 
+table {
+  width: 100%;
   border-collapse: collapse;
+}
 
-  th,
-  td {
-    border: 1px solid white;
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+
+  button {
+    width: 100%;
+    padding: .3rem;
+    border: 0px;
+    border-radius: 5px;
+    background: lightcoral;
+    color: white;
   }
 }
