@@ -10,7 +10,7 @@
 }
 
 body {
-  padding-top: 67PX;
+  padding-top: 67px;
 
   font-family:
     'Roboto',
@@ -29,7 +29,7 @@ body {
   min-height: 100dvh;
 
   color: white;
-  background: linear-gradient(to left, #87CEFA, #4682B4);
+  background: linear-gradient(to left, #87cefa, #4682b4);
 }
 
 .h1-title {
