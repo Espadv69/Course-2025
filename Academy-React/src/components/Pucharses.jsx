@@ -64,19 +64,20 @@ const Pucharses = () => {
         <button onClick={addRow}>Add</button>
       </div>
 
-      <table className="table_pucharses">
-        <thead>
-          <tr>
-            <th>Day</th>
-            <th>Item</th>
-            <th>Quantity</th>
-            <th>Unit Price</th>
-            <th>Total</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody className="tbody"></tbody>
-      </table>
+      <div className="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Unit Price</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
     </div>
   )
 }
