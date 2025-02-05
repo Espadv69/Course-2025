@@ -35,8 +35,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/shopping" onClick={() => setMenuOpen(false)}>
-            Shopping
+          <Link to="/pucharses" onClick={() => setMenuOpen(false)}>
+            Pucharses
           </Link>
         </li>
         <li>
