@@ -34,6 +34,7 @@ const Dashboard = () => {
           Log Out
         </button>
       </div>
+      <h3 className="h3-courses_title">OUR COURSES</h3>
       <ul className="courses_ul">
         {COURSES.map((course) => (
           <li key={course.id} className="courses_li">
