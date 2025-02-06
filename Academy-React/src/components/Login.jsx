@@ -14,7 +14,8 @@ const Login = () => {
 
     const user = users.find(
       (u) =>
-        (u.email === identifier || u.username === identifier) && u.pass === pass
+        (u.email === identifier || u.username === identifier) &&
+        u.pass === pass,
     )
 
     if (user) {
