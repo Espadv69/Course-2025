@@ -16,11 +16,27 @@ const Contact = () => {
           <p>item paragraph</p>
         </div>
       </div>
-      <form>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
+      <form className="form-grid__contact">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
+          veritatis
+        </p>
+        <label>
+          Name
+          <input type="text" />
+        </label>
+        <label>
+          Email
+          <input type="text" />
+        </label>
+        <label>
+          Subject
+          <input type="text" />
+        </label>
+        <label>
+          Comment
+          <input type="text" />
+        </label>
         <button>Send</button>
       </form>
     </div>
