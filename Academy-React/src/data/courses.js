@@ -20,4 +20,10 @@ const COURSES = [
     description:
       'Build backend applications using Node.js and Express with  REST APIs.',
   },
+  {
+    id: 4,
+    name: 'HTML & CSS Mastery',
+    duration: '3 weeks',
+    description: 'Create modern, responsive websites with HTML5 and CSS3.',
+  },
 ]
