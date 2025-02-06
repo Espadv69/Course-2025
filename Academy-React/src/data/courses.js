@@ -13,4 +13,11 @@ const COURSES = [
     description:
       'Understand the basics of React, including components, state, and props.',
   },
+  {
+    id: 3,
+    name: 'Node.js & Express',
+    duration: '5 weeks',
+    description:
+      'Build backend applications using Node.js and Express with  REST APIs.',
+  },
 ]
