@@ -27,6 +27,17 @@
   }
 }
 
+.h3-courses_title {
+  margin: 1rem auto;
+  margin-bottom: 1rem;
+
+  width: 100%;
+  max-width: 430px;
+
+  text-align: center;
+  border-bottom: 3px solid whitesmoke;
+}
+
 .courses_ul {
   list-style: none;
 
@@ -35,7 +46,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 200px);
   justify-content: center;
-  align-items: center;
   gap: 1rem;
 }
 
@@ -51,7 +61,7 @@
   border-radius: 8px;
 
   background: #0066ff54;
-  transition: scale .2s ease-in-out;
+  transition: scale .1s ease-in-out;
 }
 
 .courses_li:hover {
