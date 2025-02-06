@@ -35,6 +35,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 200px);
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -49,7 +50,7 @@
 
   border-radius: 8px;
 
-  background: #0066ff80;
+  background: #0066ff54;
   transition: scale .2s ease-in-out;
 }
 
