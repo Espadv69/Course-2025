@@ -8,13 +8,14 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   border: 1px solid #ccc;
 
   button {
     width: 100%;
-    padding: .3rem;
+    padding: 0.3rem;
     border: 0px;
     border-radius: 5px;
     background: lightcoral;
@@ -59,7 +60,7 @@ th, td {
   select,
   button {
     width: 30%;
-    padding: .5rem;
+    padding: 0.5rem;
     border: 2px solid white;
     color: white;
     background: transparent;
