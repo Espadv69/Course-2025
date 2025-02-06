@@ -33,4 +33,11 @@ const COURSES = [
     description:
       'Learn frontend and backend development with JavaScript, React, and Node.js.',
   },
+  {
+    id: 6,
+    name: 'Python for Beginners',
+    duration: '5 weeks',
+    description:
+      'Master Python fundamentals, including syntax, loops, and functions.',
+  },
 ]
