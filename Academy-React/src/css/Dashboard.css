@@ -46,7 +46,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 200px);
   justify-content: center;
-  align-items: center;
   gap: 1rem;
 }
 
