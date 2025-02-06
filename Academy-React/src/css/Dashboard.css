@@ -41,7 +41,7 @@
 .courses_ul {
   list-style: none;
 
-  padding: .3rem;
+  padding: 0.3rem;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, 200px);
@@ -51,17 +51,17 @@
 
 .courses_li {
   cursor: pointer;
-  padding: .5rem;
+  padding: 0.5rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 
   border-radius: 8px;
 
   background: #0066ff54;
-  transition: scale .1s ease-in-out;
+  transition: scale 0.1s ease-in-out;
 }
 
 .courses_li:hover {
