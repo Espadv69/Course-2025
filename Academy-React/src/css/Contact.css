@@ -3,4 +3,12 @@
 
   display: grid;
   grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .grid-contact {
+    grid-template-columns: 1fr;
+  }
 }
