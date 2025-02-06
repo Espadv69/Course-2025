@@ -29,7 +29,9 @@ const Pucharses = () => {
 
   return (
     <div>
-      <h2 style={{ textAlign: 'center' }}>Weekly Pucharses Record</h2>
+      <h2 style={{ textAlign: 'center', marginTop: '1rem' }}>
+        Weekly Pucharses Record
+      </h2>
 
       {/* Form */}
       <div className="form">
