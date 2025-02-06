@@ -26,4 +26,11 @@ const COURSES = [
     duration: '3 weeks',
     description: 'Create modern, responsive websites with HTML5 and CSS3.',
   },
+  {
+    id: 5,
+    name: 'Full-Stack Development',
+    duration: '10 weeks',
+    description:
+      'Learn frontend and backend development with JavaScript, React, and Node.js.',
+  },
 ]
