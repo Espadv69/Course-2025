@@ -54,4 +54,11 @@ export const COURSES = [
     description:
       'Improve problem-solving skills with data structures and algorithmic thinking.',
   },
+  {
+    id: 9,
+    name: 'Cybersecurity Basics',
+    duration: '4 weeks',
+    description:
+      'Learn about network security, encryption, and ethical hacking principles.',
+  },
 ]
