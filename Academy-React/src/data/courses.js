@@ -47,4 +47,11 @@ const COURSES = [
     description:
       'Understand relational databases and SQL queries to manage data.',
   },
+  {
+    id: 8,
+    name: 'Data Structures & Algorithms',
+    duration: '6 weeks',
+    description:
+      'Improve problem-solving skills with data structures and algorithmic thinking.',
+  },
 ]
