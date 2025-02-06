@@ -40,4 +40,11 @@ const COURSES = [
     description:
       'Master Python fundamentals, including syntax, loops, and functions.',
   },
+  {
+    id: 7,
+    name: 'SQL & Databases',
+    duration: '4 weeks',
+    description:
+      'Understand relational databases and SQL queries to manage data.',
+  },
 ]
