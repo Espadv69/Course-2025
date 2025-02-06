@@ -61,4 +61,11 @@ export const COURSES = [
     description:
       'Learn about network security, encryption, and ethical hacking principles.',
   },
+  {
+    id: 10,
+    name: 'Artificial Intelligence & Machine Learning',
+    duration: '8 weeks',
+    description:
+      'Explore AI concepts and build ML models using Python libraries.',
+  },
 ]
