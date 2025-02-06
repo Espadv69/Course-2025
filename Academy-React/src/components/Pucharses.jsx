@@ -36,7 +36,7 @@ const Pucharses = () => {
       {/* Form */}
       <div className="form">
         <select value={day} onChange={(e) => setDay(e.target.value)}>
-          <option value="">Select Day</option>
+          <option value="" disabled>Select Day</option>
           <option value="Monday">Monday</option>
           <option value="Tuesday">Tuesday</option>
           <option value="Wednesday">Wednesday</option>
@@ -45,13 +45,24 @@ const Pucharses = () => {
           <option value="Saturday">Saturday</option>
           <option value="Sunday">Sunday</option>
         </select>
+        <select value={item} onChange={(e) => setItem(e.target.value)}>
+          <option value="" disabled>Select Course</option>
+          <option value="JavaScript Basics">JavaScript Basics</option>
+          <option value="React Fundamentals">React Fundamentals</option>
+          <option value="Node.js & Express">Node.js & Express</option>
+          <option value="HTML & CSS Mastery">HTML & CSS Mastery</option>
+          <option value="Full-Stack Development">Full-Stack Development</option>
+          <option value="Python for Beginners">Python for Beginners</option>
+          <option value="SQL & Databases">SQL & Databases</option>
+          <option value="Data Structures & Algorithms">
+            Data Structures & Algorithms
+          </option>
+          <option value="Cybersecurity Basics">Cybersecurity Basics</option>
+          <option value="Artificial Intelligence & Machine Learning">
+            Artificial Intelligence & Machine Learning
+          </option>
+        </select>
         <div className="form_input">
-          <input
-            type="text"
-            value={item}
-            onChange={(e) => setItem(e.target.value)}
-            placeholder="Item"
-          />
           <input
             type="number"
             value={quantity}
@@ -73,7 +84,7 @@ const Pucharses = () => {
           <thead>
             <tr>
               <th>Day</th>
-              <th>Item</th>
+              <th>Course</th>
               <th>Quantity</th>
               <th>Unit Price</th>
               <th>Total</th>
