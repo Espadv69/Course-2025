@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+import { COURSES } from '../data/courses' // API simulated
+
 import '../css/Dashboard.css'
 
 const Dashboard = () => {
@@ -32,6 +34,15 @@ const Dashboard = () => {
           Log Out
         </button>
       </div>
+      <ul className="courses_ul">
+        {COURSES.map((course) => (
+          <li key={course.id} className="courses_li">
+            <h2>{course.name}</h2>
+            <p>{course.description}</p>
+            <strong>{course.duration}</strong>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
