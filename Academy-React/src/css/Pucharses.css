@@ -59,7 +59,7 @@ th, td {
   select,
   button {
     width: 30%;
-    padding: 1rem;
+    padding: .5rem;
     border: 2px solid white;
     color: white;
     background: transparent;
