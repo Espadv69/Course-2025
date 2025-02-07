@@ -40,6 +40,11 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
+          <Link to="/billing" onClick={() => setMenuOpen(false)}>
+            Billing
+          </Link>
+        </li>
+        <li>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>
             Contact
           </Link>
