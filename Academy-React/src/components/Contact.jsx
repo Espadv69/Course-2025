@@ -1,9 +1,10 @@
 import '../css/Contact.css'
+
 const Contact = () => {
   return (
     <div className="grid-contact">
       <div>
-        <div>
+        <div className='comments-feedback__contact'>
           <h3>We're here to help</h3>
           <p>If you have any questions, don't hesitate to reach out to us.</p>
         </div>
