@@ -18,8 +18,8 @@ const Contact = () => {
       </div>
       <form className="form-grid__contact">
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
-          veritatis
+          Feel free to contact us for any inquiries, feedback, or assistance. We
+          are happy to help!
         </p>
         <label>
           Name
