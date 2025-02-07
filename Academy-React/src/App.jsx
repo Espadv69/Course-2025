@@ -11,6 +11,7 @@ import Register from './components/Register'
 
 import Dashboard from './components/Dashboard'
 import Pucharses from './components/Pucharses'
+import Billing from './components/Billing'
 import Contact from './components/Contact'
 
 function Layout() {
@@ -25,6 +26,7 @@ function Layout() {
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/pucharses" element={<Pucharses />} />
+        <Route path="/billing" element={<Billing />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
