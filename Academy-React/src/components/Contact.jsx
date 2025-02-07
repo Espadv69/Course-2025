@@ -4,16 +4,16 @@ const Contact = () => {
     <div className="grid-contact">
       <div>
         <div>
-          <h3>item</h3>
-          <p>item paragraph</p>
+          <h3>We're here to help</h3>
+          <p>If you have any questions, don't hesitate to reach out to us.</p>
         </div>
         <div>
-          <h3>item</h3>
-          <p>item paragraph</p>
+          <h3>Your feedback matters</h3>
+          <p>We value your opinion and are always looking to improve.</p>
         </div>
         <div>
-          <h3>item</h3>
-          <p>item paragraph</p>
+          <h3>Let's stay connected</h3>
+          <p>Follow us on social media or send us a message anytime.</p>
         </div>
       </div>
       <form className="form-grid__contact">
