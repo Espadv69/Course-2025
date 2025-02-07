@@ -18,7 +18,7 @@ const Contact = () => {
         </div>
       </div>
       <form className="form-grid__contact">
-        <p style={{ opacity: '.8'}}>
+        <p style={{ opacity: '.8' }}>
           Feel free to contact us for any inquiries, feedback, or assistance. We
           are happy to help!
         </p>
