@@ -11,4 +11,4 @@ function prom(n1 = Number, n2 = Number, n3 = Number) {
   }
 }
 
-prom(4, 3, 5)
+prom(4, 1, 4)
