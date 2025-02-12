@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { useAuth } from '../auth/authContext'
 import { productsData } from '../data/data'
 
+import '../css/Home.css'
+
 const ProductsList = () => {
   const [products, setProducts] = useState(productsData)
   const { user } = useAuth()
@@ -11,7 +13,7 @@ const ProductsList = () => {
   }
 
   return (
-    <div>
+    <div className="productsList">
       <h2>Product List</h2>
 
       <ul>
