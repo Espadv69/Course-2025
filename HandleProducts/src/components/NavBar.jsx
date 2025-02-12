@@ -1,6 +1,8 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useAuth } from '../auth/authContext'
 
+import '../css/NavBar.css'
+
 const NavBar = () => {
   const { user, logout } = useAuth()
   const location = useLocation()
