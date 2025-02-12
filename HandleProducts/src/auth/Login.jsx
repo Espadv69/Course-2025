@@ -8,8 +8,12 @@ const Login = () => {
   const navigate = useNavigate()
 
   const handleLogin = () => {
-    login(username)
-    navigate('/')
+    if (username) {
+      login(username)
+      navigate('/')
+    } else {
+      alert('Username field required')
+    }
   }
 
   return (
@@ -17,11 +21,13 @@ const Login = () => {
       <h2>Login</h2>
       <input
         type="text"
-        value={username.toLowerCase()}
+        value={username}
         onChange={(e) => setUsername(e.target.value)}
         placeholder="Enter your username"
       />
-      <button onClick={handleLogin}>Login</button>
+      <button type="button" onClick={handleLogin}>
+        Login
+      </button>
     </div>
   )
 }
