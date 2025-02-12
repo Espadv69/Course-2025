@@ -17,7 +17,7 @@ const Login = () => {
       <h2>Login</h2>
       <input
         type="text"
-        value={username}
+        value={username.toLowerCase()}
         onChange={(e) => setUsername(e.target.value)}
         placeholder="Enter your username"
       />
