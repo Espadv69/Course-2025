@@ -1,12 +1,18 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
+import { AuthProvider } from './auth/authContext'
 
-import WrappedApp from './App'
+import App from './App'
 
 const root = createRoot(document.getElementById('root'))
 
 root.render(
   <StrictMode>
-    <WrappedApp />
-  </StrictMode>,
+    <BrowserRouter>
+      <AuthProvider>
+        <App />
+      </AuthProvider>
+    </BrowserRouter>
+  </StrictMode>
 )
