@@ -1,22 +1,20 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useAuth } from '../auth/authContext'
 
 const NavBar = () => {
   const { user, logout } = useAuth()
+  const location = useLocation()
 
-  return (
-    <nav>
-      {user && <Link to="/">Home</Link>}
-      {user && user.role === 'admin' && (
-        <Link to="/add-product">Add product</Link>
-      )}
-      {user ? (
-        <button onClick={logout}>Logout</button>
-      ) : (
-        <Link to="/login">Login</Link>
-      )}
-    </nav>
-  )
+  if (location.pathname === '/login') return null
+
+  const routes = [
+    { path: '/', label: 'Home', show: user && location.pathname !== '/' },
+    {
+      path: 'add-product',
+      label: 'Add Product',
+      show: user?.role === 'admin' && location.pathname !== '/add-product',
+    },
+  ]
 }
 
 export default NavBar
