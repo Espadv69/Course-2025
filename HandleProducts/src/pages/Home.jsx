@@ -17,7 +17,7 @@ const ProductsList = () => {
       <ul>
         {products.map((product) => (
           <li key={product.id}>
-            {product.name} - {product.price}
+            {product.name} - {product.price}€
             {user && user.role === 'admin' && (
               <button onClick={() => handleDeleteProduct(product.id)}>
                 Delete
