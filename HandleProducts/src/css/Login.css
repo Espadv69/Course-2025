@@ -1,9 +1,9 @@
 .loginForm {
   margin: 1rem auto;
-  padding: 1rem;
+  padding: 4rem 1rem;
   width: 100%;
   max-width: 400px;
-  height: 50dvh;
+  height: auto;
 
   display: flex;
   flex-direction: column;
