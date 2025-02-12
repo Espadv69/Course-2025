@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { useAuth } from '../auth/authContext'
-import { productDatas } from '../data/data'
+import { productsData } from '../data/data'
 
 const ProductsList = () => {
-  const [products, setProducts] = useState(productDatas)
+  const [products, setProducts] = useState(productsData)
   const { user } = useAuth()
 
   const handleDeleteProduct = (id) => {
