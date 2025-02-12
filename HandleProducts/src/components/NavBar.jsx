@@ -17,7 +17,7 @@ const NavBar = () => {
   ]
 
   return (
-    <nav>
+    <nav className="nav">
       {routes.map(
         (route) =>
           route.show && (
