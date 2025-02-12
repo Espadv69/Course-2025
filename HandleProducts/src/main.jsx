@@ -1,5 +1,12 @@
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom'
+
+import WrappedApp from './App'
 
 const root = createRoot(document.getElementById('root'))
 
-root.render(<App />)
+root.render(
+  <StrictMode>
+    <WrappedApp />
+  </StrictMode>,
+)
