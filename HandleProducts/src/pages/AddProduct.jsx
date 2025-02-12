@@ -10,4 +10,28 @@ const AddProduct = () => {
       setNewProduct({ name: '', price: '' })
     }
   }
+
+  return (
+    <div>
+      <h2>Add Product</h2>
+
+      <input
+        type="text"
+        value={newProduct.name}
+        onChange={(e) => setNewProduct({ ...newProduct, name: e.target.value })}
+        placeholder="Product Name"
+      />
+      <input
+        type="number"
+        value={newProduct.price}
+        onChange={(e) =>
+          setNewProduct({ ...newProduct, price: e.target.value })
+        }
+        placeholder="Product Name"
+      />
+      <button onClick={handleAddProduct}>Add</button>
+    </div>
+  )
 }
+
+export default AddProduct
