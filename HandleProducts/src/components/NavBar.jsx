@@ -15,6 +15,20 @@ const NavBar = () => {
       show: user?.role === 'admin' && location.pathname !== '/add-product',
     },
   ]
+
+  return (
+    <nav>
+      {routes.map(
+        (route) =>
+          route.show && (
+            <Link key={route.path} to={route.path}>
+              {route.label}
+            </Link>
+          )
+      )}
+      {user && <button onClick={logout}>Logout</button>}
+    </nav>
+  )
 }
 
 export default NavBar
