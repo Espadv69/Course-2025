@@ -6,12 +6,14 @@ const NavBar = () => {
 
   return (
     <nav>
-      <Link to="/">Home</Link>
-      {user && <button onClick={logout}>Logout</button>}
+      {user && <Link to="/">Home</Link>}
       {user && user.role === 'admin' && (
-        <div>
-          <Link to="/add-product">Add Product</Link>
-        </div>
+        <Link to="/add-product">Add product</Link>
+      )}
+      {user ? (
+        <button onClick={logout}>Logout</button>
+      ) : (
+        <Link to="/login">Login</Link>
       )}
     </nav>
   )
