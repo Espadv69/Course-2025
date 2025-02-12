@@ -27,7 +27,7 @@ const AddProduct = () => {
         onChange={(e) =>
           setNewProduct({ ...newProduct, price: e.target.value })
         }
-        placeholder="Product Name"
+        placeholder="Product Price"
       />
       <button onClick={handleAddProduct}>Add</button>
     </div>
