@@ -1,0 +1,38 @@
+.nav {
+  margin: auto;
+  margin-bottom: 1rem;
+  padding: .8rem .6rem;
+  width: 100%;
+  max-width: 400px;
+
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(65, 105, 225, 0.300);
+
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+    opacity: .8;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    opacity: 1;
+  }
+
+  button {
+    cursor: pointer;
+    padding: .5rem;
+  
+    border: 2px solid lightcoral;
+    border-radius: 5px;
+
+    color: lightpink;
+    background: transparent;
+  }
+}
