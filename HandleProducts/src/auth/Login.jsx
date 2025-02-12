@@ -6,4 +6,9 @@ const Login = () => {
   const [username, setUsername] = useState('')
   const { login } = useAuth()
   const navigate = useNavigate()
+
+  const handleLogin = () => {
+    login(username)
+    navigate('/')
+  }
 }
