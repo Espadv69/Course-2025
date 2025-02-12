@@ -8,8 +8,8 @@ const Login = () => {
   const navigate = useNavigate()
 
   const handleLogin = () => {
-    if (username) {
-      login(username)
+    if (username.trim()) {
+      login(username.toLowerCase())
       navigate('/')
     } else {
       alert('Username field required')
