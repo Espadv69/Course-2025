@@ -1,0 +1,6 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { AuthProvider, useAuth } from './auth/authContext'
+import NavBar from './components/NavBar'
+import ProductList from './pages/Home'
+import AddProduct from './pages/AddProduct'
+import Login from './auth/Login'
