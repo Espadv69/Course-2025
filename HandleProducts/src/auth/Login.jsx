@@ -17,7 +17,7 @@ const Login = () => {
   }
 
   return (
-    <div>
+    <div className="loginForm">
       <h2>Login</h2>
       <input
         type="text"
