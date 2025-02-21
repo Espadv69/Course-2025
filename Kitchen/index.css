@@ -27,6 +27,18 @@ body {
     'Open Sans',
     'Helvetica Neue',
     sans-serif;
+
+  transition: color .3s, background .3s;
+}
+
+body.light {
+  color: var(--color-light);
+  background: var(--bg-light);
+}
+
+body.dark {
+  color: var(--color-dark);
+  background: var(--bg-dark);
 }
 
 table {
@@ -41,4 +53,8 @@ th,
 td {
   border: 2px solid lightskyblue;
   padding: .4rem;
+}
+
+th {
+  background: rgba(173, 216, 230, 0.300);
 }
