@@ -58,7 +58,34 @@ document.addEventListener('DOMContentLoaded', () => {
     renderTable()
   }
 
-  function editProduct() {}
+  function editProduct() {
+    const code = parseInt(prompt('Ingrese el código del producto a editar'))
+    if (!code) return alert('Debe ingresar un código')
+
+    const product = products.find((p) => p.code === code)
+    if (!product) return alert('No se encuentra el producto')
+
+    const newEntries =
+      parseInt(
+        prompt(
+          `Entradas actuales: ${product.entries}\n Ingrese nuevas entradas:`
+        ),
+        10
+      ) || product.entries
+
+    const newExits =
+      parseInt(
+        prompt(`Salidas actuales: ${product.exits}\n Ingrese nuevas salidas`),
+        10
+      ) || product.exits
+
+    product.entries = newEntries
+    product.exits = newExits
+    product.stock = product.initialQuantity + product.entries - product.exits
+
+    localStorage.setItem('products', JSON.stringify(products))
+    renderTable()
+  }
 
   $addProductBtn.addEventListener('click', addProduct)
   $editProductBtn.addEventListener('click', editProduct)
