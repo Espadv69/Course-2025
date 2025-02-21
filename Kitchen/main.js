@@ -34,5 +34,21 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
+  // Function to add Product
+  function addProduct() {
+    const code = prompt('Ingrese el código del producto')
+    if (!code) return alert('Debe ingresar el código del producto')
+
+    if (products.some((p) => p.code === code)) {
+      return alert('Este código ya existe en otro producto')
+    }
+
+    const name = prompt('Ingrese el nombre del producto')
+    const initialQuantity = parseInt(prompt('Cantidad inicial'), 10) || 0
+    const entries = 0
+    const exists = 0
+    const stock = initialQuantity
+  }
+
   renderTable()
 })
