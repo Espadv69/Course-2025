@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function editProduct() {
-    const code = parseInt(prompt('Ingrese el código del producto a editar'))
+    const code = prompt('Ingrese el código del producto a editar')
     if (!code) return alert('Debe ingresar un código')
 
     const product = products.find((p) => p.code === code)
@@ -68,14 +68,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const newEntries =
       parseInt(
         prompt(
-          `Entradas actuales: ${product.entries}\n Ingrese nuevas entradas:`
+          `Entradas actuales: ${product.entries}\nIngrese nuevas entradas:`
         ),
         10
       ) || product.entries
 
     const newExits =
       parseInt(
-        prompt(`Salidas actuales: ${product.exits}\n Ingrese nuevas salidas`),
+        prompt(`Salidas actuales: ${product.exits}\nIngrese nuevas salidas`),
         10
       ) || product.exits
 
