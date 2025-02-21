@@ -10,4 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // DOM
   const $tbody = document.querySelector('tbody')
   const $addProductBtn = document.querySelector('.addProduct')
+
+  // Products from localStorage
+  let products = JSON.parse(localStorage.getItem('products')) || []
 })
