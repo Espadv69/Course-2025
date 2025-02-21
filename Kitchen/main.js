@@ -12,8 +12,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const $addProductBtn = document.querySelector('.addProduct')
   const $editProductBtn = document.querySelector('.editProduct')
 
+  const defaultProducts = [
+    {
+      code: '1',
+      name: 'pollo',
+      initialQuantity: 50,
+      entries: 0,
+      exits: 0,
+      stock: 50,
+    },
+  ]
+
   // Products from localStorage
-  let products = JSON.parse(localStorage.getItem('products')) || []
+  let products = JSON.parse(localStorage.getItem('products'))
+  if (!products || products.length === 0) {
+    products = [...defaultProducts]
+    localStorage.setItem('products', JSON.stringify(products))
+  }
 
   // Function to render table
   function renderTable() {
