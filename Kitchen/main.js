@@ -48,6 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const entries = 0
     const exists = 0
     const stock = initialQuantity
+
+    const product = { code, name, initialQuantity, entries, exists, stock }
+
+    products.push(product)
+    localStorage.setItem('products', JSON.stringify(products))
+
+    renderTable()
   }
 
   renderTable()
