@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // DOM
   const $tbody = document.querySelector('tbody')
   const $addProductBtn = document.querySelector('.addProduct')
+  const $editProductBtn = document.querySelector('.editProduct')
 
   // Products from localStorage
   let products = JSON.parse(localStorage.getItem('products')) || []
@@ -57,7 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
     renderTable()
   }
 
+  function editProduct() {}
+
   $addProductBtn.addEventListener('click', addProduct)
+  $editProductBtn.addEventListener('click', editProduct)
 
   renderTable()
 })
