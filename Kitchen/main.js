@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const name = prompt('Ingrese el nombre del producto')
     const initialQuantity = parseInt(prompt('Cantidad inicial'), 10) || 0
     const entries = 0
-    const exists = 0
+    const exits = 0
     const stock = initialQuantity
 
-    const product = { code, name, initialQuantity, entries, exists, stock }
+    const product = { code, name, initialQuantity, entries, exits, stock }
 
     products.push(product)
     localStorage.setItem('products', JSON.stringify(products))
