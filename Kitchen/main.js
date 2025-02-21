@@ -14,8 +14,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const defaultProducts = [
     {
-      code: '132',
-      name: 'pollo',
+      code: '45435',
+      name: 'Pollo',
+      initialQuantity: 50,
+      entries: 0,
+      exits: 0,
+      stock: 50,
+    },
+    {
+      code: '45436',
+      name: 'Carne',
+      initialQuantity: 30,
+      entries: 0,
+      exits: 0,
+      stock: 30,
+    },
+    {
+      code: '45437',
+      name: 'Pescado',
+      initialQuantity: 80,
+      entries: 0,
+      exits: 0,
+      stock: 80,
+    },
+    {
+      code: '45438',
+      name: 'Marisco',
+      initialQuantity: 90,
+      entries: 0,
+      exits: 0,
+      stock: 90,
+    },
+    {
+      code: '45439',
+      name: 'Verdura',
       initialQuantity: 50,
       entries: 0,
       exits: 0,
@@ -90,13 +122,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const newExits =
       parseInt(
-        prompt(`Salidas actuales: ${products[index].exits}\nIngrese nuevas salidas`),
+        prompt(
+          `Salidas actuales: ${products[index].exits}\nIngrese nuevas salidas`
+        ),
         10
       ) || products[index].exits
 
     products[index].entries = newEntries
     products[index].exits = newExits
-    products[index].stock = products[index].initialQuantity + newEntries - newExits
+    products[index].stock =
+      products[index].initialQuantity + newEntries - newExits
 
     localStorage.setItem('products', JSON.stringify(products))
     renderTable()
