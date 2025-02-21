@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const defaultProducts = [
     {
-      code: '1',
+      code: '132',
       name: 'pollo',
       initialQuantity: 50,
       entries: 0,
@@ -77,26 +77,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const code = prompt('Ingrese el código del producto a editar')
     if (!code) return alert('Debe ingresar un código')
 
-    const product = products.find((p) => p.code === code)
-    if (!product) return alert('No se encuentra el producto')
+    const index = products.findIndex((p) => p.code === code)
+    if (index === -1) return alert('No se encuentra el producto')
 
     const newEntries =
       parseInt(
         prompt(
-          `Entradas actuales: ${product.entries}\nIngrese nuevas entradas:`
+          `Entradas actuales: ${products[index].entries}\nIngrese nuevas entradas:`
         ),
         10
-      ) || product.entries
+      ) || products[index].entries
 
     const newExits =
       parseInt(
-        prompt(`Salidas actuales: ${product.exits}\nIngrese nuevas salidas`),
+        prompt(`Salidas actuales: ${products[index].exits}\nIngrese nuevas salidas`),
         10
-      ) || product.exits
+      ) || products[index].exits
 
-    product.entries = newEntries
-    product.exits = newExits
-    product.stock = product.initialQuantity + product.entries - product.exits
+    products[index].entries = newEntries
+    products[index].exits = newExits
+    products[index].stock = products[index].initialQuantity + newEntries - newExits
 
     localStorage.setItem('products', JSON.stringify(products))
     renderTable()
