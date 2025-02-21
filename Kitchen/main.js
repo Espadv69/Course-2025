@@ -57,5 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderTable()
   }
 
+  $addProductBtn.addEventListener('click', addProduct)
+
   renderTable()
 })
