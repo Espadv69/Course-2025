@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { saveQuestions, getQuestions } from '../utils/localStorage.js'
+import { saveQuestions, getQuestions, saveAnswers } from '../utils/localStorage.js'
 
 const TakeExam = () => {
   const questions = getQuestions()
@@ -10,6 +10,11 @@ const TakeExam = () => {
       ...prev,
       [index]: value,
     }))
+  }
+
+  const handleSubmit = () => {
+    saveAnswers(answers)
+    alert('Exam submitted successfully!')
   }
 }
 
