@@ -13,6 +13,25 @@ const AddQuestions = () => {
     saveQuestions(newQuestions)
     setQuestion('')
   }
+
+  return (
+    <div>
+      <h2>Add Questions</h2>
+      <textarea
+        value={question}
+        onChange={(e) => setQuestion(e.target.value)}
+        placeholder="Write your question here..."
+      />
+      <button onClick={handleAddQuestion}>Add Question</button>
+
+      <h3>Existing Questions</h3>
+      <ul>
+        {questions.map((q, index) => (
+          <li key={index}>{q.text}</li>
+        ))}
+      </ul>
+    </div>
+  )
 }
 
 export default AddQuestions
