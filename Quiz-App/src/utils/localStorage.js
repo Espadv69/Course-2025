@@ -1,4 +1,4 @@
-export const saveQuestion = (questions) => {
+export const saveQuestions = (questions) => {
   localStorage.setItem('questions', JSON.stringify(questions))
 }
 
