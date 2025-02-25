@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { saveQuestions, getQuestions } from '../utils/localStorage'
+import { saveQuestions, getQuestions } from '../utils/localStorage.js'
 
 const AddQuestions = () => {
   const [question, setQuestion] = useState('') // Hanlde input question
