@@ -1,3 +1,13 @@
 # COURSE 2025
 
-- Academy Project
+- Academy
+- Academy-React
+```bash
+  npm install
+```
+- diagrams
+- HandleProducts
+```bash
+  npm install
+```
+- Kitchen
