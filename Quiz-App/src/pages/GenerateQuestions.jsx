@@ -17,6 +17,15 @@ const GenerateQuestions = () => {
     const randomIndex = Math.floor(Math.random() * predefinedQuestions.length)
     setGenerateQuestion(predefinedQuestions[randomIndex])
   }
+
+  const saveGenerateQuestion = () => {
+    if (!generateQuestion) return
+
+    const newQuestion = [...questions, { text: generateQuestion }]
+    setQuestions(newQuestion)
+    saveQuestions(newQuestion)
+    setGenerateQuestion('')
+  }
 }
 
 export default GenerateQuestions
