@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import AddQuestions from './pages/AddQuestions'
 import GenerateQuestions from './pages/GenerateQuestions'
 import TakeExam from './pages/TakeExam'
+import ReviewAnswers from './pages/ReviewAnswers'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/add" element={<AddQuestions />} />
         <Route path="/generate" element={<GenerateQuestions />} />
         <Route path="/exam" element={<TakeExam />} />
+        <Route path="/review" element={<ReviewAnswers />} />
       </Routes>
     </Router>
   )
