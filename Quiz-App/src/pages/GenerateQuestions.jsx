@@ -9,6 +9,9 @@ const predefinedQuestions = [
   'What year did the first man land on the moon?',
 ]
 
-const GenerateQuestions = () => {}
+const GenerateQuestions = () => {
+  const [generateQuestion, setGenerateQuestion] = useState('')
+  const [questions, setQuestions] = useState(getQuestions())
+}
 
 export default GenerateQuestions
