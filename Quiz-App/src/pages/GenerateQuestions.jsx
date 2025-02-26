@@ -19,9 +19,9 @@ const GenerateQuestions = () => {
   }
 
   const saveGenerateQuestion = () => {
-    if (!generateQuestion) return
+    if (!generatedQuestion) return
 
-    const newQuestion = [...questions, { text: generateQuestion }]
+    const newQuestion = [...questions, { text: generatedQuestion }]
     setQuestions(newQuestion)
     saveQuestions(newQuestion)
     setGeneratedQuestion('')
