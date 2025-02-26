@@ -19,6 +19,7 @@ const TakeExam = () => {
   const handleSubmit = () => {
     saveAnswers(answers)
     alert('Exam submitted successfully!')
+    setAnswers('')
   }
 
   return (
