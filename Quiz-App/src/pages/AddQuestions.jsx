@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { saveQuestions, getQuestions } from '../utils/localStorage.js'
 
 const AddQuestions = () => {
@@ -18,13 +18,9 @@ const AddQuestions = () => {
     const updateQuestion = questions.filter((_, i) => {
       i !== index
     })
-    setQuestion(updateQuestion)
+    setQuestions(updateQuestion)
     saveQuestions(updateQuestion)
   }
-
-  useEffect(() => {
-    getQuestions()
-  }, [questions])
 
   return (
     <div>
