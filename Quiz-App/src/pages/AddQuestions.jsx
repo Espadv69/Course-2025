@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { saveQuestions, getQuestions } from '../utils/localStorage.js'
 
 const AddQuestions = () => {
@@ -21,6 +21,10 @@ const AddQuestions = () => {
     setQuestion(updateQuestion)
     saveQuestions(updateQuestion)
   }
+
+  useEffect(() => {
+    getQuestions()
+  }, [questions])
 
   return (
     <div>
