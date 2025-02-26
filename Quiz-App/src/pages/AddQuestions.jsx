@@ -14,6 +14,14 @@ const AddQuestions = () => {
     setQuestion('')
   }
 
+  const handleDeleteQuestion = (index) => {
+    const updateQuestion = questions.filter((_, i) => {
+      i !== index
+    })
+    setQuestion(updateQuestion)
+    saveQuestions(updateQuestion)
+  }
+
   return (
     <div>
       <h2>Add Questions</h2>
@@ -27,7 +35,10 @@ const AddQuestions = () => {
       <h3>Existing Questions</h3>
       <ul>
         {questions.map((q, index) => (
-          <li key={index}>{q.text}</li>
+          <li key={index}>
+            {q.text}
+            <button onClick={() => handleDeleteQuestion(index)}>Delete</button>
+          </li>
         ))}
       </ul>
     </div>
