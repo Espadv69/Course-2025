@@ -10,12 +10,12 @@ const predefinedQuestions = [
 ]
 
 const GenerateQuestions = () => {
-  const [generateQuestion, setGenerateQuestion] = useState('')
+  const [generatedQuestion, setGeneratedQuestion] = useState('')
   const [questions, setQuestions] = useState(getQuestions())
 
   const generateRandomQuestion = () => {
     const randomIndex = Math.floor(Math.random() * predefinedQuestions.length)
-    setGenerateQuestion(predefinedQuestions[randomIndex])
+    setGeneratedQuestion(predefinedQuestions[randomIndex])
   }
 
   const saveGenerateQuestion = () => {
@@ -24,8 +24,22 @@ const GenerateQuestions = () => {
     const newQuestion = [...questions, { text: generateQuestion }]
     setQuestions(newQuestion)
     saveQuestions(newQuestion)
-    setGenerateQuestion('')
+    setGeneratedQuestion('')
   }
+
+  return (
+    <div>
+      <h2>Generate Random Question</h2>
+      <button onClick={generateRandomQuestion}>Generate Random Question</button>
+
+      {generatedQuestion && (
+        <div>
+          <p>{generatedQuestion}</p>
+          <button onClick={saveGenerateQuestion}>Save Question</button>
+        </div>
+      )}
+    </div>
+  )
 }
 
 export default GenerateQuestions
