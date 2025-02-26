@@ -17,6 +17,9 @@ const NavBar = () => {
       <Link to="/exam" className="nav-item">
         Take Exam
       </Link>
+      <Link to="/review" className="nav-item">
+        Review Exam
+      </Link>
     </nav>
   )
 }
