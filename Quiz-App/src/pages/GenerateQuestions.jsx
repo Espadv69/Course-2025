@@ -12,6 +12,11 @@ const predefinedQuestions = [
 const GenerateQuestions = () => {
   const [generateQuestion, setGenerateQuestion] = useState('')
   const [questions, setQuestions] = useState(getQuestions())
+
+  const generateRandomQuestion = () => {
+    const randomIndex = Math.floor(Math.random() * predefinedQuestions.length)
+    setGenerateQuestion(predefinedQuestions[randomIndex])
+  }
 }
 
 export default GenerateQuestions
