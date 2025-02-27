@@ -1,10 +1,11 @@
 import { useState } from 'react'
+import './TaskForm.css'
 
 const TaskForm = ({ onAddTask }) => {
   const [taskName, setTaskName] = useState('')
 
   return (
-    <form>
+    <form style={{ marginTop: '40px' }}>
       <label>
         Task Name:
         <input
