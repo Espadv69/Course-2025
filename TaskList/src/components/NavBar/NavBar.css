@@ -10,11 +10,12 @@
   justify-content: center;
   gap: 1rem;
 
-  background: #000;
+  background: lightblue;
 
   a {
-    color: white;
+    color: currentColor;
     text-decoration: none;
+    font-weight: 600;
     opacity: .9;
   }
 
