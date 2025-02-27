@@ -2,7 +2,7 @@ import TaskItem from '../TaskItem/TaskItem'
 import './TaskList.css'
 
 const TaskList = ({ tasks, ondeleteTask }) => {
-  if (tasks.lenght === 0) return <p>No taks found!</p>
+  if (tasks.length === 0) return <p>No taks found!</p>
 
   return (
     <ul>
