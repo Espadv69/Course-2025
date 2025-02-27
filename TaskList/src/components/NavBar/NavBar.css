@@ -1,0 +1,25 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding: .4rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  background: #000;
+
+  a {
+    color: white;
+    text-decoration: none;
+    opacity: .9;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    opacity: 1;
+  }
+}
