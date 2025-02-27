@@ -13,11 +13,19 @@ const App = () => {
     setTasks((prev) => [...prev, newTask])
   }
 
+  const handleDeleteTask = (index) => {
+    const filteredTasks = tasks.filter((_, i) => i !== index)
+    setTasks(filteredTasks)
+  }
+
   return (
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/" element={<TaskList tasks={tasks} />} />
+        <Route
+          path="/"
+          element={<TaskList tasks={tasks} ondeleteTask={handleDeleteTask} />}
+        />
         <Route path="/form" element={<TaskForm onAddTask={handleAddTask} />} />
       </Routes>
     </Router>
