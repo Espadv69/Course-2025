@@ -3,7 +3,7 @@ import './TaskItem.css'
 const TaskItem = ({ task, ondeleteTask }) => {
   return (
     <li>
-      <p>{task.task}</p>
+      <p>{task}</p>
       <button onClick={ondeleteTask}>Delete</button>
     </li>
   )
