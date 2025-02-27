@@ -4,8 +4,19 @@ import './TaskForm.css'
 const TaskForm = ({ onAddTask }) => {
   const [taskName, setTaskName] = useState('')
 
+  const handleSubmit = (event) => {
+    event.preventDefault()
+
+    if (taskName.trim() === '')
+      return alert('You should fill out the TaskName field')
+  }
+
   return (
-    <form style={{ marginTop: '40px' }} className="task__form">
+    <form
+      onSubmit={handleSubmit}
+      style={{ marginTop: '40px' }}
+      className="task__form"
+    >
       <h2>Task Form</h2>
       <label className="task__label">
         Task Name:
@@ -17,6 +28,7 @@ const TaskForm = ({ onAddTask }) => {
           placeholder="Enter the TaskName"
         />
       </label>
+      <button className="task__button">Add Task</button>
     </form>
   )
 }
