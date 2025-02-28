@@ -5,6 +5,9 @@
     "/diagrams",
     "/HandleProducts",
     "/Kitchen",
-    "Quiz-App"
+    "/Quiz-App",
+    "/TaskList",
+    "/Stopwatch",
+    "/QuoteGenerator"
   ]
 }
