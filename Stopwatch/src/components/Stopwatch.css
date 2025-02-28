@@ -1,0 +1,19 @@
+.stopwatch {
+  display: grid;
+  place-content: center;
+  gap: 5px;
+
+  button {
+    cursor: pointer;
+    padding: .4rem;
+
+    border: 2px solid currentColor;
+    color: currentColor;
+    background: transparent;
+  }
+
+  button:disabled {
+    background: gray;
+    opacity: .5;
+  }
+}
