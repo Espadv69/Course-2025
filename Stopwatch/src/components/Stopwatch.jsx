@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import './Stopwatch.css'
 
 const Stopwatch = () => {
   const [time, setTime] = useState(0)
@@ -23,7 +24,7 @@ const Stopwatch = () => {
   }
 
   return (
-    <div>
+    <div className="stopwatch">
       <h1>Stopwatch</h1>
       <h2>{formatTime(time)}</h2>
       <button onClick={() => setIsRunning(!isRunning)}>
