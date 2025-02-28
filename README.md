@@ -11,3 +11,19 @@
   npm install
 ```
 - Kitchen
+- Quiz-App
+```bash
+  npm install
+```
+- TaskList
+```bash
+  npm install
+```
+- Stopwatch
+```bash
+  npm install
+```
+- QuoteGenerator
+```bash
+  npm install
+```
