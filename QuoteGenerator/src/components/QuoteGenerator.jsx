@@ -19,6 +19,8 @@ const QUOTES = [
   },
 ]
 
-const QuoteGenerator = () => {}
+const QuoteGenerator = () => {
+  const [quote, setQuote] = useState(QUOTES[0])
+}
 
 export default QuoteGenerator
