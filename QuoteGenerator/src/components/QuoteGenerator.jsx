@@ -21,6 +21,11 @@ const QUOTES = [
 
 const QuoteGenerator = () => {
   const [quote, setQuote] = useState(QUOTES[0])
+
+  const getRandomQuote = () => {
+    const randomIndex = Math.floor(Math.random() * QUOTES.length)
+    setQuote(randomIndex)
+  }
 }
 
 export default QuoteGenerator
