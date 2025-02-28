@@ -24,13 +24,25 @@ const QuoteGenerator = () => {
 
   const getRandomQuote = () => {
     const randomIndex = Math.floor(Math.random() * QUOTES.length)
-    setQuote(randomIndex)
+    setQuote(QUOTES[randomIndex])
   }
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(`"${quote.text}" - ${quote.author}`)
     alert('Quote copied to clipboard!')
   }
+
+  return (
+    <div className="quotes">
+      <h1>Random Quote Generator</h1>
+      <blockquote>
+        <p>"{quote.text}"</p>
+        <footer>- {quote.author}</footer>
+      </blockquote>
+      <button onClick={getRandomQuote}>Generate Quote</button>
+      <button onClick={copyToClipboard}>Copy to clipboard</button>
+    </div>
+  )
 }
 
 export default QuoteGenerator
