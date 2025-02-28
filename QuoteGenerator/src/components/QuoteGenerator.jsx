@@ -26,6 +26,11 @@ const QuoteGenerator = () => {
     const randomIndex = Math.floor(Math.random() * QUOTES.length)
     setQuote(randomIndex)
   }
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(`"${quote.text}" - ${quote.author}`)
+    alert('Quote copied to clipboard!')
+  }
 }
 
 export default QuoteGenerator
