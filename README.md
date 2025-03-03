@@ -2,28 +2,32 @@
 
 - Academy
 - Academy-React
-```bash
-  npm install
-```
+  ```bash
+    npm install
+  ```
 - diagrams
 - HandleProducts
-```bash
-  npm install
-```
+  ```bash
+    npm install
+  ```
 - Kitchen
 - Quiz-App
-```bash
-  npm install
-```
+  ```bash
+    npm install
+  ```
 - TaskList
-```bash
-  npm install
-```
+  ```bash
+    npm install
+  ```
 - Stopwatch
-```bash
-  npm install
-```
+  ```bash
+    npm install
+  ```
 - QuoteGenerator
-```bash
-  npm install
-```
+  ```bash
+    npm install
+  ```
+- rock-paper-scissors
+  ```bash
+    npm install
+  ```
