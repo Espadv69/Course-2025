@@ -8,6 +8,7 @@
     "/Quiz-App",
     "/TaskList",
     "/Stopwatch",
-    "/QuoteGenerator"
+    "/QuoteGenerator",
+    "/rock-paper-scissors"
   ]
 }
