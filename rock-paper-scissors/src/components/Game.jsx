@@ -29,6 +29,26 @@ const Game = () => {
       setResult('You Lose!')
     }
   }
+
+  return (
+    <div className="bg-blue-500 w-full py-2">
+      <h1 className="text-white text-center sm:text-5xl text-2xl font-bold">
+        Rock Paper Scissors
+      </h1>
+      <div className="">
+        {CHOICES.map((choice) => (
+          <ChoiceButton key={choice} choice={choice} onClick={play} />
+        ))}
+      </div>
+      {userChoice && (
+        <Result
+          userChoice={userChoice}
+          computerChoice={computerChoice}
+          result={result}
+        />
+      )}
+    </div>
+  )
 }
 
 export default Game
