@@ -31,11 +31,11 @@ const Game = () => {
   }
 
   return (
-    <div className="bg-blue-500 w-full py-2">
-      <h1 className="text-white text-center sm:text-5xl text-2xl font-bold">
+    <div className="">
+      <h1 className="text-white text-center bg-blue-400 sm:text-5xl text-2xl font-bold mb-8">
         Rock Paper Scissors
       </h1>
-      <div className="">
+      <div className="flex justify-center gap-1.5">
         {CHOICES.map((choice) => (
           <ChoiceButton key={choice} choice={choice} onClick={play} />
         ))}
