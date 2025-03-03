@@ -15,6 +15,20 @@ const Game = () => {
     setComputerChoice(randomChoice)
     determineWinner(choice, randomChoice) // toDo
   }
+
+  const determineWinner = (user, computer) => {
+    if (user === computer) {
+      setResult("It's a tie!")
+    } else if (
+      (user === 'Rock' && computer === 'Scissors') ||
+      (user === 'Paper' && computer === 'Rock') ||
+      (user === 'Scissors' && computer === 'Paper')
+    ) {
+      setResult('You win!')
+    } else {
+      setResult('You Lose!')
+    }
+  }
 }
 
 export default Game
