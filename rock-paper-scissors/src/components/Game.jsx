@@ -13,7 +13,7 @@ const Game = () => {
     const randomChoice = CHOICES[Math.floor(Math.random() * CHOICES.length)]
     setUserChoice(choice)
     setComputerChoice(randomChoice)
-    determineWinner(choice, randomChoice) // toDo
+    determineWinner(choice, randomChoice)
   }
 
   const determineWinner = (user, computer) => {
