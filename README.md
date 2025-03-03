@@ -31,3 +31,4 @@
   ```bash
     npm install
   ```
+- testTailwind
