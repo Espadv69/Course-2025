@@ -9,6 +9,7 @@
     "/TaskList",
     "/Stopwatch",
     "/QuoteGenerator",
-    "/rock-paper-scissors"
+    "/rock-paper-scissors",
+    "/testTailwind"
   ]
 }
