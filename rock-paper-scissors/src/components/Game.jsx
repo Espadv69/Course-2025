@@ -32,7 +32,7 @@ const Game = () => {
 
   return (
     <div className="w-full">
-      <h1 className="text-white text-center bg-blue-400 lg:text-5xl md:text-4xl text-3xl font-bold mb-8">
+      <h1 className="text-white text-center bg-blue-400 lg:text-7xl md:text-5xl text-3xl font-bold mb-8">
         Rock Paper Scissors
       </h1>
       <div className="px-2.5 flex justify-center gap-1.5">
