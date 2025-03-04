@@ -43,6 +43,15 @@ const MemoryGame = () => {
       return () => clearTimeout(timeId)
     }
   }, [selectedCards])
+
+  const handleCardClick = (card) => {
+    if (!card.flipped && selectedCards.length < 2) {
+      setCards((prev) =>
+        prev.map((c) => (c.id === card.id ? { ...c, flipped: true } : c))
+      )
+      setSelectedCards([...selectedCards, card])
+    }
+  }
 }
 
 export default MemoryGame
