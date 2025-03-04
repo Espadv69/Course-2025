@@ -52,6 +52,19 @@ const MemoryGame = () => {
       setSelectedCards([...selectedCards, card])
     }
   }
+
+  const resetGame = () => {
+    setCards(
+      shuffleCards.map((emoji, index) => ({
+        id: index,
+        emoji,
+        flipped: false,
+        matched: false,
+      }))
+    )
+    setMatches(0)
+    setSelectedCards([])
+  }
 }
 
 export default MemoryGame
