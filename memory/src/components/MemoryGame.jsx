@@ -65,6 +65,28 @@ const MemoryGame = () => {
     setMatches(0)
     setSelectedCards([])
   }
+
+  return (
+    <div className="text-center w-full">
+      <h2 className="text-5xl font-bold">Memory Game</h2>
+      <div className="grid grid-cols-4 justify-center gap-2 mt-4 ">
+        {cards.map((card) => (
+          <div
+            key={card.id}
+            className={`size-20 text-3xl flex items-center justify-center bg-gray-300 rounded-xl cursor-pointer  ${
+              card.flipped ? 'bg-white' : ''
+            }`}
+            onClick={() => handleCardClick(card)}
+          >
+            {card.flipped || card.matched ? card.emoji : '❓'}
+          </div>
+        ))}
+      </div>
+      {matches === initialCards.length && (
+        <button onClick={resetGame}>Restart Game</button>
+      )}
+    </div>
+  )
 }
 
 export default MemoryGame
