@@ -8,6 +8,10 @@ public class Tutorial {
       System.out.println(x);
       x++;
     }
+
+    for (x = 1; x <= y; x++) {
+      System.out.println("x = " + x);
+    }
   }
 
 }
