@@ -12,6 +12,13 @@ public class Tutorial {
     for (x = 1; x <= y; x++) {
       System.out.println("x = " + x);
     }
+
+    x = 1;
+
+    do {
+      System.out.println("do while x = " + x);
+      x++;
+    } while (x <= y);
   }
 
 }
