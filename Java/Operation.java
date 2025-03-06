@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Operation {
 
 	public static void main(String[] args) {
-		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Add first value");
@@ -18,6 +17,8 @@ public class Operation {
 		int multiply = num1 * num2;
 		System.out.println("Sum: " + sum);
 		System.out.println("Multiply: " + multiply);
+
+		sc.close();
 	}
 
 }
