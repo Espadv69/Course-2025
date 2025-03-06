@@ -8,7 +8,7 @@ public class SueldoIngresar {
     System.out.println("Ingrese sueldo: ");
     double sueldo = sc.nextDouble();
 
-    if (sueldo > 3000) {
+    if (sueldo >= 3000) {
       System.out.println("Debe pagar impuestos");
     } else {
       System.out.println("No debe pagar impuestos");
