@@ -24,7 +24,7 @@ public class Promedio {
     } else if (promedio >= 4 && promedio < 7) {
       System.out.println("El estudiante " + nombre + " ha ido regular con un promedio de " + promedio);
     } else {
-      System.out.println("El estudiante " + nombre + " ha reprobado con un promedio de " + promedio + " y debe recursar");
+      System.out.println("El estudiante " + nombre + " ha reprobado con un promedio de " + String.format("%.2f", promedio) + " y debe recursar");
     }
 
     sc.close();
