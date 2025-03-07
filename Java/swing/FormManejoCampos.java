@@ -14,13 +14,13 @@ public class FormManejoCampos extends JFrame implements ActionListener {
     setLayout(null);
 
     combo = new JComboBox<String>();
-    combo.setBounds(10, 10, 80, 20);
+    combo.setBounds(0, 0, 200, 25);
     add(combo);
   }
 
   public static void main(String[] args) {
     FormManejoCampos form = new FormManejoCampos();
-    form.setBounds(0, 0, 200, 150);
+    form.setBounds(0, 0, 300, 300);
     form.setVisible(true);
     form.setDefaultCloseOperation(EXIT_ON_CLOSE);
     form.setTitle("Manejo de Campos");
