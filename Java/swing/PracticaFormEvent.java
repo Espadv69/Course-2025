@@ -15,10 +15,12 @@ public class PracticaFormEvent extends javax.swing.JFrame implements ActionListe
     btnAceptar = new JButton("Aceptar");
     btnAceptar.setBounds(10, 10, 100, 30);
     add(btnAceptar);
+    btnAceptar.addActionListener(this);
 
     btnCancelar = new JButton("Cancelar");
     btnCancelar.setBounds(120, 10, 100, 30);
     add(btnCancelar);
+    btnCancelar.addActionListener(this);
   }
 
   public static void main(String[] args) {
@@ -31,7 +33,15 @@ public class PracticaFormEvent extends javax.swing.JFrame implements ActionListe
 
   @Override
   public void actionPerformed(ActionEvent e) {
-    throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
+    if (e.getSource() == btnAceptar) {
+      System.out.println("Boton Aceptar");
+      return;
+    } else if (e.getSource() == btnCancelar) {
+      System.out.println("Boton Cancelar");
+      return;
+    }
+
+    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
   }
 
 }
