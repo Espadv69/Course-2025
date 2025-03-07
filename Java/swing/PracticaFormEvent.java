@@ -19,7 +19,11 @@ public class PracticaFormEvent extends javax.swing.JFrame {
   }
 
   public static void main(String[] args) {
-    
+    PracticaFormEvent form = new PracticaFormEvent();
+    form.setBounds(10, 10, 400,300);
+    form.setVisible(true);
+    form.setDefaultCloseOperation(EXIT_ON_CLOSE);
+    form.setTitle("Practica Formulario Eventos");
   }
 
 }
