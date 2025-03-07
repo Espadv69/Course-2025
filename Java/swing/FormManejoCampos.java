@@ -1,21 +1,27 @@
 package swing;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 
-public class FormManejoCampos extends JFrame implements ActionListener {
+public class FormManejoCampos extends JFrame implements ItemListener {
 
-  private JComboBox<String> combo;
+  private JComboBox<String> comboColores;
 
   public FormManejoCampos() {
     setLayout(null);
 
-    combo = new JComboBox<String>();
-    combo.setBounds(0, 0, 200, 25);
-    add(combo);
+    comboColores = new JComboBox<String>();
+    comboColores.setBounds(0, 0, 200, 25);
+
+    comboColores.addItem("Seleccione un color");
+    comboColores.addItem("Rojo");
+    comboColores.addItem("Verde");
+    comboColores.addItem("Azul");
+    comboColores.addItem("Amarillo");
+    add(comboColores);
   }
 
   public static void main(String[] args) {
@@ -27,11 +33,11 @@ public class FormManejoCampos extends JFrame implements ActionListener {
   }
 
   @Override
-  public void actionPerformed(ActionEvent e) {
+  public void itemStateChanged(ItemEvent e) {
     try {
 
-    } catch (Exception err) {
-      err.printStackTrace();
+    } catch (Exception exception) {
+      exception.printStackTrace();
     }
   }
 
