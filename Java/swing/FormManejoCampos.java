@@ -22,6 +22,8 @@ public class FormManejoCampos extends JFrame implements ItemListener {
     comboColores.addItem("Azul");
     comboColores.addItem("Amarillo");
     add(comboColores);
+
+    comboColores.addItemListener(this);
   }
 
   public static void main(String[] args) {
@@ -35,6 +37,13 @@ public class FormManejoCampos extends JFrame implements ItemListener {
   @Override
   public void itemStateChanged(ItemEvent e) {
     try {
+      if (e.getSource() == comboColores) {
+        if (comboColores.getSelectedIndex() == 0) {
+          setTitle("Manejo de Campos");
+        } else {
+          setTitle("Color seleccionado: " + comboColores.getSelectedItem());
+        }
+      }
 
     } catch (Exception exception) {
       exception.printStackTrace();
