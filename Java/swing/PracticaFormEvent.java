@@ -15,13 +15,13 @@ public class PracticaFormEvent extends JFrame implements ActionListener {
 
     btnAceptar = new JButton("Aceptar");
     btnAceptar.setBounds(10, 10, 100, 30);
-    add(btnAceptar);
     btnAceptar.addActionListener(this);
+    add(btnAceptar);
 
     btnCancelar = new JButton("Cancelar");
     btnCancelar.setBounds(120, 10, 100, 30);
-    add(btnCancelar);
     btnCancelar.addActionListener(this);
+    add(btnCancelar);
   }
 
   public static void main(String[] args) {
