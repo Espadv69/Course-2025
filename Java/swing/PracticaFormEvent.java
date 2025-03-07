@@ -1,8 +1,11 @@
 package swing;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 
-public class PracticaFormEvent extends javax.swing.JFrame {
+public class PracticaFormEvent extends javax.swing.JFrame implements ActionListener {
 
   private JButton btnAceptar, btnCancelar;
 
@@ -24,6 +27,11 @@ public class PracticaFormEvent extends javax.swing.JFrame {
     form.setVisible(true);
     form.setDefaultCloseOperation(EXIT_ON_CLOSE);
     form.setTitle("Practica Formulario Eventos");
+  }
+
+  @Override
+  public void actionPerformed(ActionEvent e) {
+    throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
   }
 
 }
