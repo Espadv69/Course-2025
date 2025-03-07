@@ -18,8 +18,6 @@ public class Trimestre {
 
     if (day < 1 || day > 31 || month < 1 || month > 12) {
       System.out.println("La fecha ingresada no es válida.");
-      sc.close();
-      return;
     } else {
       if (month == 1 || month == 2 || month == 3) {
         System.out.println("El día " + day + " del mes " + month + " del año " + year + " pertenece al primer trimestre.");
