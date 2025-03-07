@@ -21,9 +21,11 @@ public class Trimestre {
     } else {
       if (month == 1 || month == 2 || month == 3) {
         System.out.println("El día " + day + " del mes " + month + " del año " + year + " pertenece al primer trimestre.");
-      } else {
-        System.out.println("El día " + day + " del mes " + month + " del año " + year + " no pertenece al primer trimestre.");
+        sc.close();
+        return;
       }
+
+      System.out.println("El día " + day + " del mes " + month + " del año " + year + " no pertenece al primer trimestre.");
     }
 
     sc.close();
