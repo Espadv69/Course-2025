@@ -38,7 +38,7 @@ public class FormButtons extends JFrame implements ActionListener {
 
   public static void main(String[] args) {
     FormButtons form = new FormButtons();
-    form.setBounds(20, 20, 300, 300);
+    form.setBounds(20, 20, 500, 300);
     form.setDefaultCloseOperation(EXIT_ON_CLOSE);
     form.setVisible(true);
     form.setTitle("Formulario con Botones");
@@ -53,9 +53,13 @@ public class FormButtons extends JFrame implements ActionListener {
           return;
         }
 
+        String title = "Formulario con Botones de: " + txtName.getText();
+        setTitle(title);
+
         System.out.println("Nombre: " + txtName.getText());
       } else if (e.getSource() == btnReset) {
         txtName.setText("");
+        setTitle("Formulario con Botones");
       }
     } catch (Exception ex) {
       ex.printStackTrace();
