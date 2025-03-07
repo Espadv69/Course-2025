@@ -18,11 +18,11 @@ public class FormButtons extends JFrame implements ActionListener {
     setLayout(null);
 
     lblName = new JLabel("Nombre:");
-    lblName.setBounds(10, 10, 100, 30);
+    lblName.setBounds(10, 10, 80, 30);
     add(lblName);
 
     txtName = new JTextField();
-    txtName.setBounds(120, 10, 200, 30);
+    txtName.setBounds(70, 10, 200, 30);
     add(txtName);
 
     btnSubmit = new JButton("Enviar");
@@ -47,7 +47,11 @@ public class FormButtons extends JFrame implements ActionListener {
   @Override
   public void actionPerformed(ActionEvent e) {
     try {
-
+      if (e.getSource() == btnSubmit) {
+        System.out.println("Nombre: " + txtName.getText());
+      } else if (e.getSource() == btnReset) {
+        txtName.setText("");
+      }
     } catch (Exception ex) {
       ex.printStackTrace();
     }
