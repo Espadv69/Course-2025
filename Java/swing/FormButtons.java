@@ -38,7 +38,7 @@ public class FormButtons extends JFrame implements ActionListener {
 
   public static void main(String[] args) {
     FormButtons form = new FormButtons();
-    form.setSize(400, 600);
+    form.setBounds(20, 20, 300, 300);
     form.setDefaultCloseOperation(EXIT_ON_CLOSE);
     form.setVisible(true);
     form.setTitle("Formulario con Botones");
@@ -48,6 +48,11 @@ public class FormButtons extends JFrame implements ActionListener {
   public void actionPerformed(ActionEvent e) {
     try {
       if (e.getSource() == btnSubmit) {
+        if (txtName.getText().isEmpty()) {
+          System.out.println("El campo nombre es requerido");
+          return;
+        }
+
         System.out.println("Nombre: " + txtName.getText());
       } else if (e.getSource() == btnReset) {
         txtName.setText("");
