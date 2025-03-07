@@ -16,12 +16,30 @@ public class FormButtons extends JFrame implements ActionListener {
 
   public FormButtons() {
     setLayout(null);
+
+    lblName = new JLabel("Nombre:");
+    lblName.setBounds(10, 10, 100, 30);
+    add(lblName);
+
+    txtName = new JTextField();
+    txtName.setBounds(120, 10, 200, 30);
+    add(txtName);
+
+    btnSubmit = new JButton("Enviar");
+    btnSubmit.setBounds(10, 50, 100, 30);
+    btnSubmit.addActionListener(this);
+    add(btnSubmit);
+
+    btnReset = new JButton("Limpiar");
+    btnReset.setBounds(120, 50, 100, 30);
+    btnReset.addActionListener(this);
+    add(btnReset);
   }
 
   public static void main(String[] args) {
     FormButtons form = new FormButtons();
-    form.setSize(300, 200);
-    form.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    form.setSize(400, 600);
+    form.setDefaultCloseOperation(EXIT_ON_CLOSE);
     form.setVisible(true);
     form.setTitle("Formulario con Botones");
   }
