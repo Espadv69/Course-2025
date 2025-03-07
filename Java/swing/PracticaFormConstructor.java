@@ -14,7 +14,7 @@ public class PracticaFormConstructor extends javax.swing.JFrame {
     add(lblTitulo);
 
     lblVersion = new JLabel("Java Version: 23.0.2");
-    lblVersion.setBounds(10, 40, 200, 30);
+    lblVersion.setBounds(230, 20, 200, 30);
     add(lblVersion);
   }
 
