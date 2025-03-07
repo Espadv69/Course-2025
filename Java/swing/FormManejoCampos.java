@@ -19,7 +19,11 @@ public class FormManejoCampos extends JFrame implements ActionListener {
   }
 
   public static void main(String[] args) {
-
+    FormManejoCampos form = new FormManejoCampos();
+    form.setBounds(0, 0, 200, 150);
+    form.setVisible(true);
+    form.setDefaultCloseOperation(EXIT_ON_CLOSE);
+    form.setTitle("Manejo de Campos");
   }
 
   @Override
