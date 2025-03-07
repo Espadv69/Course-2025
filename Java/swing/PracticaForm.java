@@ -8,8 +8,9 @@ public class PracticaForm extends javax.swing.JFrame {
 
   public static void main(String[] args) {
     PracticaForm form = new PracticaForm();
-    form.setSize(400, 300);
+    form.setBounds(10, 10, 400, 300);
     form.setVisible(true);
+    form.setDefaultCloseOperation(EXIT_ON_CLOSE);
   }
 
 }
