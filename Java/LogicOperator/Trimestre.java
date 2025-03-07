@@ -7,6 +7,21 @@ public class Trimestre {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
+    System.out.println("Ingrese el número de dia: ");
+    int day = sc.nextInt();
+
+    System.out.println("Ingrese el número de mes: ");
+    int month = sc.nextInt();
+
+    System.out.println("Ingrese el número de año: ");
+    int year = sc.nextInt();
+
+    if (month == 1 || month == 2 || month == 3) {
+      System.out.println("El día " + day + " del mes " + month + " del año " + year + " pertenece al primer trimestre.");
+    } else {
+      System.out.println("El día " + day + " del mes " + month + " del año " + year + " no pertenece al primer trimestre.");
+    }
+
     sc.close();
   }
 
