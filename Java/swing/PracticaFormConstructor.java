@@ -4,7 +4,7 @@ import javax.swing.JLabel;
 
 public class PracticaFormConstructor extends javax.swing.JFrame {
 
-  private javax.swing.JLabel lblTitulo, lblVersion;
+  private JLabel lblTitulo, lblVersion;
 
   public PracticaFormConstructor() {
     setLayout(null);
