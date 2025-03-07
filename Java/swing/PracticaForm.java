@@ -12,13 +12,14 @@ public class PracticaForm extends javax.swing.JFrame {
     // Crea una instancia de la clase PracticaForm
     PracticaForm form = new PracticaForm();
 
-    // Establecer el tamaño del formulario
+    // Establecer el tamaño y la posición del formulario
     form.setBounds(10, 10, 400, 300);
 
     // Establecer la visibilidad del formulario
     form.setVisible(true);
 
     // Establecer la operación de cierre del formulario
+    // Cuando se cierra el formulario, la aplicación termina
     form.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
     // Establecer el título del formulario
