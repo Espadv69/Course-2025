@@ -9,16 +9,19 @@ public class PiecesLength {
 
     System.out.println("Enter the number of pieces to process:");
     int pieces = sc.nextInt();
+    sc.nextLine();
 
-    if (pieces < 1 || pieces > 100) {
-      System.out.println("The number of pieces is not valid!");
+    if (pieces < 1 || pieces > 15) {
+      System.out.println("The number of pieces is not valid! It should be between 1 and 15.");
       sc.close();
       return;
     }
 
     while (pieces > 0) {
       System.out.println("Enter the length of the piece:");
+
       float length = sc.nextFloat();
+      sc.nextLine();
 
       if (length < 1.0) {
         System.out.println("The piece is too small!");
