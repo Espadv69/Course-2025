@@ -47,3 +47,15 @@
   ```bash
     npm install
   ```
+
+- Java
+  - JPanel
+  - LogicOperator
+  - loops
+  - Math
+  - swing
+  - switchCase
+
+- learnHooks
+
+- testTailwind
