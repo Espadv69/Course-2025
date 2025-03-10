@@ -50,7 +50,7 @@ public class PasswordLoop extends JFrame implements ActionListener {
   public void actionPerformed(ActionEvent e) {
     if (e.getSource() == loginButton) {
       while (true) {
-        if (userField.getText().equals("admin") && passField.getText().equals("admin")) {
+        if (userField.getText().equals("admin") && passField.getText().equals("1234")) {
           System.out.println("Login successful");
           userField.setText("");
           passField.setText("");
