@@ -16,10 +16,21 @@ public class PasswordLoop extends JFrame implements ActionListener {
 
   public PasswordLoop() {
     setLayout(null);
+
+    userLabel = new JLabel("Username");
+    userLabel.setBounds(10, 20, 80, 25);
+    add(userLabel);
+
+    userField = new JTextField();
+    userField.setBounds(100, 20, 165, 25);
+    add(userField);
   }
 
   public static void main(String[] args) {
-
+    PasswordLoop frame = new PasswordLoop();
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setSize(400, 60);
+    frame.setVisible(true);
   }
 
   @Override
