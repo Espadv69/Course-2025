@@ -10,6 +10,7 @@ public class GuessRandomLoop {
     // Guess a number between 1 to 100
     int number = (int) (Math.random() * 100) + 1;
     int guess = 0;
+    int attempts = 1;
 
     System.out.println("Guess a number between 1 to 100");
 
@@ -17,14 +18,14 @@ public class GuessRandomLoop {
       guess = sc.nextInt();
 
       if (guess == number) {
-        System.out.println("Congratulations! You guessed the number");
+        System.out.println("Congratulations! You guessed the number in " + attempts + " attempts");
       } else if (guess < number) {
         System.out.println("Try a higher number");
+        attempts++;
       } else {
         System.out.println("Try a lower number");
+        attempts++;
       }
-
-      sc.close();
     }
 
     sc.close();
