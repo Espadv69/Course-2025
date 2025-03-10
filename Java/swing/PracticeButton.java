@@ -15,6 +15,10 @@ public class PracticeButton extends JFrame {
     button = new JButton("Click me!");
     button.setBounds(100, 100, 100, 50);
     add(button);
+
+    text = new JLabel("Hello, world!");
+    text.setBounds(100, 50, 100, 50);
+    add(text);
   }
 
   public static void main(String[] args) {
