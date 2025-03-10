@@ -8,25 +8,30 @@ public class PiecesLength {
     Scanner sc = new Scanner(System.in);
 
     System.out.println("Enter the number of pieces to process:");
+
+    while (!sc.hasNextInt()) {
+      System.out.println("The number of pieces must be an integer!");
+      sc.next();
+    }
+
     int pieces = sc.nextInt();
     sc.nextLine();
-
-    if (pieces < 1 || pieces > 15) {
-      System.out.println("The number of pieces is not valid! It should be between 1 and 15.");
-      sc.close();
-      return;
-    }
 
     while (pieces > 0) {
       System.out.println("Enter the length of the piece:");
 
-      float length = sc.nextFloat();
+      while (!sc.hasNextDouble()) {
+        System.out.println("The length of the piece must be a number!");
+        sc.next();
+      }
+
+      double length = sc.nextDouble();
       sc.nextLine();
 
       if (length < 1.0) {
-        System.out.println("The piece is too small!");
+        System.out.println("The length of the piece is too small!");
       } else if (length > 2.0) {
-        System.out.println("The piece is too large!");
+        System.out.println("The length of the piece is too large!");
       } else {
         System.out.println("The piece is accepted!");
       }
