@@ -18,7 +18,7 @@ public class WhileLoop {
     int k = 1;
     while (k <= 10) {
       if (k % 2 == 0) {
-        System.out.println("k while: " + k);
+        System.out.println("k while even: " + k);
       }
       k++;
     }
