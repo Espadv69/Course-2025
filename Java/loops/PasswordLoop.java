@@ -24,12 +24,25 @@ public class PasswordLoop extends JFrame implements ActionListener {
     userField = new JTextField();
     userField.setBounds(100, 20, 165, 25);
     add(userField);
+
+    passLabel = new JLabel("Password");
+    passLabel.setBounds(10, 50, 80, 25);
+    add(passLabel);
+
+    passField = new JTextField();
+    passField.setBounds(100, 50, 165, 25);
+    add(passField);
+
+    loginButton = new JButton("Login");
+    loginButton.setBounds(10, 80, 80, 25);
+    loginButton.addActionListener(this);
+    add(loginButton);
   }
 
   public static void main(String[] args) {
     PasswordLoop frame = new PasswordLoop();
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    frame.setSize(400, 60);
+    frame.setSize(400, 400);
     frame.setVisible(true);
   }
 
