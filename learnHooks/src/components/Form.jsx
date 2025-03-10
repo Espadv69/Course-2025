@@ -1,16 +1,33 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Form = () => {
   const [name, setName] = useState('')
   const [age, setAge] = useState('')
+  const [maxLen] = useState(10)
+  const [minLen] = useState(3)
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    if (name.length < minLen) {
+      alert('Name is too short')
+      return
+    }
 
-    alert(`Name: ${name} and Age: ${age}`)
+    if (age < 18) {
+      alert('You must be 18 years old or older')
+      return
+    }
+
+    alert(`Hello ${name}! You are ${age} years old`)
     setName('')
     setAge('')
   }
+
+  useEffect(() => {
+    if (age.length > 2) {
+      setAge(age.slice(0, 2))
+    }
+  }, [age])
 
   return (
     <form
@@ -23,6 +40,8 @@ const Form = () => {
         placeholder="Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
+        maxLength={maxLen}
+        minLength={minLen}
       />
       <input
         type="number"
@@ -30,8 +49,10 @@ const Form = () => {
         placeholder="Age"
         value={age}
         onChange={(e) => setAge(e.target.value)}
+        max={99}
+        min={0}
       />
-      <button className="p-4 border-2 rounded">Submit</button>
+      <button className="p-2 max-w-[100px] border-2 rounded">Submit</button>
     </form>
   )
 }
