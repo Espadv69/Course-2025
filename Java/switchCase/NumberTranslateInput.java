@@ -31,14 +31,14 @@ public class NumberTranslateInput extends JFrame implements ActionListener {
     add(btnTranslate);
 
     lblResult = new JLabel();
-    lblResult.setBounds(10, 90, 200, 30);
+    lblResult.setBounds(10, 90, 400, 30);
     add(lblResult);
   }
 
   public static void main(String[] args) {
     NumberTranslateInput frame = new NumberTranslateInput();
     frame.setTitle("Number Translate");
-    frame.setSize(300, 200);
+    frame.setSize(400, 300);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setVisible(true);
   }
@@ -49,6 +49,11 @@ public class NumberTranslateInput extends JFrame implements ActionListener {
 
       if (txtNumber.getText().isEmpty()) {
         lblResult.setText("Please enter a number.");
+        return;
+      }
+
+      if (txtNumber.getText().matches(".*[a-zA-Z]+.*")) {
+        lblResult.setText("Please enter a valid number.");
         return;
       }
 
