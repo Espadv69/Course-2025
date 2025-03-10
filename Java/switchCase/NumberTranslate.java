@@ -40,6 +40,7 @@ public class NumberTranslate {
         break;
       default:
         System.out.println("Invalid number, please enter a number between 1 to 9.");
+        break;
     }
 
     sc.close();
