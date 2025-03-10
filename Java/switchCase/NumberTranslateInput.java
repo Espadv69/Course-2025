@@ -45,7 +45,45 @@ public class NumberTranslateInput extends JFrame implements ActionListener {
 
   @Override
   public void actionPerformed(ActionEvent e) {
+    if (e.getSource() == btnTranslate) {
+      int number = Integer.parseInt(txtNumber.getText());
+      String result = "";
 
+      switch (number) {
+        case 1:
+          result = "One";
+          break;
+        case 2:
+          result = "Two";
+          break;
+        case 3:
+          result = "Three";
+          break;
+        case 4:
+          result = "Four";
+          break;
+        case 5:
+          result = "Five";
+          break;
+        case 6:
+          result = "Six";
+          break;
+        case 7:
+          result = "Seven";
+          break;
+        case 8:
+          result = "Eight";
+          break;
+        case 9:
+          result = "Nine";
+          break;
+        default:
+          result = "Invalid number, please enter a number between 1 to 9.";
+          break;
+      }
+
+      lblResult.setText(result);
+    }
   }
 
 }
