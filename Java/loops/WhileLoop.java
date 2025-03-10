@@ -14,6 +14,14 @@ public class WhileLoop {
       System.out.println("j while: " + j);
       j--;
     }
+
+    int k = 1;
+    while (k <= 10) {
+      if (k % 2 == 0) {
+        System.out.println("k while: " + k);
+      }
+      k++;
+    }
   }
 
 }
