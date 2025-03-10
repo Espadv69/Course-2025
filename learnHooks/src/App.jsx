@@ -4,7 +4,7 @@ const App = () => {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="bg-blue-300 p-4 w-full h-screen flex flex-col items-center justify-center gap-4 text-white">
+    <div className="bg-blue-600 p-4 w-full h-screen flex flex-col items-center justify-center gap-4 text-white">
       <h1 className="text-5xl">Counter</h1>
       <p className="text-3xl">{count}</p>
       <button
