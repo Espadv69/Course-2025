@@ -16,6 +16,23 @@ public class NumberTranslateInput extends JFrame implements ActionListener {
 
   public NumberTranslateInput() {
     setLayout(null);
+
+    lblNumber = new JLabel("Number: between 1 to 9");
+    lblNumber.setBounds(10, 10, 150, 30);
+    add(lblNumber);
+
+    txtNumber = new JTextField();
+    txtNumber.setBounds(150, 10, 100, 30);
+    add(txtNumber);
+
+    btnTranslate = new JButton("Translate");
+    btnTranslate.setBounds(10, 50, 100, 30);
+    btnTranslate.addActionListener(this);
+    add(btnTranslate);
+
+    lblResult = new JLabel();
+    lblResult.setBounds(10, 90, 200, 30);
+    add(lblResult);
   }
 
   public static void main(String[] args) {
