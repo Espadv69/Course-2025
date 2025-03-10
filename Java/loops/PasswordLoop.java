@@ -48,7 +48,19 @@ public class PasswordLoop extends JFrame implements ActionListener {
 
   @Override
   public void actionPerformed(ActionEvent e) {
-
+    if (e.getSource() == loginButton) {
+      while (true) {
+        if (userField.getText().equals("admin") && passField.getText().equals("admin")) {
+          System.out.println("Login successful");
+          userField.setText("");
+          passField.setText("");
+          break;
+        } else {
+          System.out.println("Login failed");
+          break;
+        }
+      }
+    }
   }
 
 }
