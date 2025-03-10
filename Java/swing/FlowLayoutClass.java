@@ -11,13 +11,13 @@ public class FlowLayoutClass {
   public FlowLayoutClass() {
     frame = new JFrame();
     frame.setLayout(new FlowLayout());
+    frame.setSize(300, 300);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setVisible(true);
   }
 
   public static void main(String[] args) {
-    FlowLayoutClass flowLayout = new FlowLayoutClass();
-    flowLayout.frame.setSize(300, 300);
-    flowLayout.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    flowLayout.frame.setVisible(true);
+    new FlowLayoutClass();
   }
 
 }
