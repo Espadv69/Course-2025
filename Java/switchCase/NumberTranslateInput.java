@@ -46,6 +46,12 @@ public class NumberTranslateInput extends JFrame implements ActionListener {
   @Override
   public void actionPerformed(ActionEvent e) {
     if (e.getSource() == btnTranslate) {
+
+      if (txtNumber.getText().isEmpty()) {
+        lblResult.setText("Please enter a number.");
+        return;
+      }
+
       int number = Integer.parseInt(txtNumber.getText());
       String result = "";
 
