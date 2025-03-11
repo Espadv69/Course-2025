@@ -1,4 +1,5 @@
 {
+  "author": "Aitor",
   "repsitories": [
     "/Academy",
     "/Academy-React",
@@ -15,5 +16,12 @@
     "/Java",
     "/testTailwind",
     "/learnHooks"
-  ]
+  ],
+  "bin": "node",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.9",
+    "@tailwindcss/vite": "^4.0.9"
+  }
 }
