@@ -27,6 +27,10 @@ public class ProductTable extends JFrame implements ActionListener {
   private DefaultTableModel model;
   private JScrollPane scrollBar;
 
+  public boolean isCellEditable(int row, int column) {
+    return false;
+  }
+
   public ProductTable() {
     JFrame frame = new JFrame("Product Table");
     frame.setSize(500, 200);
@@ -37,7 +41,7 @@ public class ProductTable extends JFrame implements ActionListener {
 
     scrollBar = new JScrollPane(table);
     frame.add(scrollBar);
-
+    
     frame.setVisible(true);
   }
 
