@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 
 public class ProductTable extends JFrame implements ActionListener {
 
@@ -23,7 +24,7 @@ public class ProductTable extends JFrame implements ActionListener {
       { "10", "J", "1000", "100" }
   };
 
-  private JTable table;
+  private DefaultTableModel model;
   private JScrollPane scrollBar;
 
   public ProductTable() {
@@ -31,7 +32,9 @@ public class ProductTable extends JFrame implements ActionListener {
     frame.setSize(500, 200);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-    table = new JTable(data, column);
+    model = new DefaultTableModel(data, column);
+    JTable table = new JTable(model);
+
     scrollBar = new JScrollPane(table);
     frame.add(scrollBar);
 
