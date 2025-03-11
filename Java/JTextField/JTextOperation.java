@@ -6,7 +6,7 @@ import javax.swing.JTextField;
 
 public class JTextOperation extends JFrame {
 
-  private JTextField textField1, textField2;
+  private JTextField textField1, textField2, equaField;
   private JButton btnSum, btnSub;
 
   public JTextOperation() {
@@ -14,6 +14,19 @@ public class JTextOperation extends JFrame {
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(400, 400);
     frame.setLayout(null);
+
+    textField1 = new JTextField("Enter a number");
+    textField1.setBounds(10, 20, 100, 30);
+    frame.add(textField1);
+
+    textField2 = new JTextField("Enter a number");
+    textField2.setBounds(10, 60, 100, 30);
+    frame.add(textField2);
+
+    equaField = new JTextField("Result");
+    equaField.setBounds(10, 100, 100, 30);
+    equaField.setEditable(false);
+    frame.add(equaField);
 
     frame.setVisible(true);
   }
