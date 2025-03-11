@@ -11,9 +11,10 @@ import javax.swing.JMenuItem;
 public class MenuDrop extends JFrame implements ActionListener {
 
   private JMenuBar menuBar;
-  private JMenu menuFile, menuEdit, menuHelp;
+  private JMenu menuFile, menuFolder, menuEdit, menuHelp;
 
   private JMenuItem itemNew, itemOpen, itemSave, itemExit;
+  private JMenuItem itemFolder, itemFile;
   private JMenuItem itemCut, itemCopy, itemPaste;
   private JMenuItem itemAbout;
 
@@ -26,12 +27,15 @@ public class MenuDrop extends JFrame implements ActionListener {
     form.setJMenuBar(menuBar);
 
     menuFile = new JMenu("File");
+    menuFolder = new JMenu("Folder");
     menuEdit = new JMenu("Edit");
     menuHelp = new JMenu("Help");
 
     menuBar.add(menuFile);
     menuBar.add(menuEdit);
     menuBar.add(menuHelp);
+
+    menuFile.add(menuFolder);
 
     itemNew = new JMenuItem("New");
     itemNew.addActionListener(this);
@@ -44,6 +48,12 @@ public class MenuDrop extends JFrame implements ActionListener {
 
     itemExit = new JMenuItem("Exit");
     itemExit.addActionListener(this);
+
+    itemFolder = new JMenuItem("Folder");
+    itemFolder.addActionListener(this);
+
+    itemFile = new JMenuItem("File");
+    itemFile.addActionListener(this);
 
     itemCut = new JMenuItem("Cut");
     itemCut.addActionListener(this);
@@ -61,6 +71,9 @@ public class MenuDrop extends JFrame implements ActionListener {
     menuFile.add(itemOpen);
     menuFile.add(itemSave);
     menuFile.add(itemExit);
+
+    menuFolder.add(itemFolder);
+    menuFolder.add(itemFile);
 
     menuEdit.add(itemCut);
     menuEdit.add(itemCopy);
@@ -93,6 +106,10 @@ public class MenuDrop extends JFrame implements ActionListener {
       System.out.println("Paste");
     } else if (e.getSource() == itemAbout) {
       System.out.println("About");
+    } else if (e.getSource() == itemFolder) {
+      System.out.println("Folder");
+    } else if (e.getSource() == itemFile) {
+      System.out.println("File");
     }
   }
 
