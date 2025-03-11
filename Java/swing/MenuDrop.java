@@ -13,7 +13,7 @@ public class MenuDrop extends JFrame implements ActionListener {
   private JMenuBar menuBar;
   private JMenu menuFile, menuFolder, menuEdit, menuHelp;
 
-  private JMenuItem itemNew, itemOpen, itemSave, itemExit;
+  private JMenuItem itemOpen, itemSave, itemExit;
   private JMenuItem itemFolder, itemFile;
   private JMenuItem itemCut, itemCopy, itemPaste;
   private JMenuItem itemAbout;
@@ -42,9 +42,6 @@ public class MenuDrop extends JFrame implements ActionListener {
     menuFile.add(menuFolder);
 
     // Create menu items
-    itemNew = new JMenuItem("New");
-    itemNew.addActionListener(this);
-
     itemOpen = new JMenuItem("Open");
     itemOpen.addActionListener(this);
 
@@ -73,7 +70,6 @@ public class MenuDrop extends JFrame implements ActionListener {
     itemAbout.addActionListener(this);
 
     // Add menu items to menu
-    menuFile.add(itemNew);
     menuFile.add(itemOpen);
     menuFile.add(itemSave);
     menuFile.add(itemExit);
@@ -96,9 +92,7 @@ public class MenuDrop extends JFrame implements ActionListener {
 
   @Override
   public void actionPerformed(ActionEvent e) {
-    if (e.getSource() == itemNew) {
-      System.out.println("New");
-    } else if (e.getSource() == itemOpen) {
+    if (e.getSource() == itemOpen) {
       System.out.println("Open");
     } else if (e.getSource() == itemSave) {
       System.out.println("Save");
