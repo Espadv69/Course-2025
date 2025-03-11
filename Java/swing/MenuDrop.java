@@ -30,6 +30,28 @@ public class MenuDrop extends JFrame {
     menuBar.add(menuEdit);
     menuBar.add(menuHelp);
 
+    itemNew = new JMenuItem("New");
+    itemOpen = new JMenuItem("Open");
+    itemSave = new JMenuItem("Save");
+    itemExit = new JMenuItem("Exit");
+
+    itemCut = new JMenuItem("Cut");
+    itemCopy = new JMenuItem("Copy");
+    itemPaste = new JMenuItem("Paste");
+
+    itemAbout = new JMenuItem("About");
+
+    menuFile.add(itemNew);
+    menuFile.add(itemOpen);
+    menuFile.add(itemSave);
+    menuFile.add(itemExit);
+
+    menuEdit.add(itemCut);
+    menuEdit.add(itemCopy);
+    menuEdit.add(itemPaste);
+
+    menuHelp.add(itemAbout);
+
     form.setVisible(true);
   }
 
