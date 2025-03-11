@@ -17,7 +17,7 @@ public class JTextFieldTutorial extends JFrame {
     textField1.setBounds(10, 20, 200, 30);
 
     textField2 = new JTextField("Welcome to Java");
-    textField2.setBounds(10, 100, 200, 30);
+    textField2.setBounds(10, 80, 200, 30);
 
     frame.add(textField1);
     frame.add(textField2);
