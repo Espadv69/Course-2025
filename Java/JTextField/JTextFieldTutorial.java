@@ -12,7 +12,6 @@ public class JTextFieldTutorial extends JFrame {
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(400, 400);
     frame.setLayout(null);
-    frame.setVisible(true);
 
     textField1 = new JTextField("Welcome home");
     textField1.setBounds(10, 20, 200, 30);
@@ -22,6 +21,8 @@ public class JTextFieldTutorial extends JFrame {
 
     frame.add(textField1);
     frame.add(textField2);
+
+    frame.setVisible(true);
   }
 
   public static void main(String[] args) {
