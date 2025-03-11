@@ -28,6 +28,14 @@ public class JTextOperation extends JFrame {
     equaField.setEditable(false);
     frame.add(equaField);
 
+    btnSum = new JButton("Sum");
+    btnSum.setBounds(10, 140, 100, 30);
+    frame.add(btnSum);
+
+    btnSub = new JButton("Sub");
+    btnSub.setBounds(10, 180, 100, 30);
+    frame.add(btnSub);
+
     frame.setVisible(true);
   }
 
