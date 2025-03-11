@@ -19,15 +19,15 @@ public class JTextOperation extends JFrame implements ActionListener {
     frame.setLayout(null);
 
     textField1 = new JTextField("0");
-    textField1.setBounds(10, 20, 100, 30);
+    textField1.setBounds(10, 20, 200, 30);
     frame.add(textField1);
 
     textField2 = new JTextField("0");
-    textField2.setBounds(10, 60, 100, 30);
+    textField2.setBounds(10, 60, 200, 30);
     frame.add(textField2);
 
     equaField = new JTextField();
-    equaField.setBounds(10, 100, 100, 30);
+    equaField.setBounds(10, 100, 200, 30);
     equaField.setEditable(false);
     frame.add(equaField);
 
