@@ -12,7 +12,7 @@ public class JTextOperation extends JFrame {
   public JTextOperation() {
     JFrame frame = new JFrame("JTextOperation");
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    frame.setSize(250, 300);
+    frame.setSize(400, 400);
     frame.setLayout(null);
 
     textField1 = new JTextField("Enter a number");
