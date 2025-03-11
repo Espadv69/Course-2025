@@ -11,9 +11,10 @@ import javax.swing.JMenuItem;
 public class MenuDrop extends JFrame implements ActionListener {
 
   private JMenuBar menuBar;
-  private JMenu menuFile, menuFolder, menuEdit, menuHelp;
+  private JMenu menuFile, menuFolder, menuFolderProyect, menuEdit, menuHelp;
 
   private JMenuItem itemOpen, itemSave, itemExit;
+  private JMenuItem itemJava, itemC, itemPython;
   private JMenuItem itemFolder, itemFile;
   private JMenuItem itemCut, itemCopy, itemPaste;
   private JMenuItem itemAbout;
@@ -30,6 +31,7 @@ public class MenuDrop extends JFrame implements ActionListener {
     // Create menus
     menuFile = new JMenu("File");
     menuFolder = new JMenu("Folder");
+    menuFolderProyect = new JMenu("Folder Proyect");
     menuEdit = new JMenu("Edit");
     menuHelp = new JMenu("Help");
 
@@ -40,6 +42,7 @@ public class MenuDrop extends JFrame implements ActionListener {
 
     // Add menu to menu
     menuFile.add(menuFolder);
+    menuFolder.add(menuFolderProyect);
 
     // Create menu items
     itemOpen = new JMenuItem("Open");
@@ -50,6 +53,15 @@ public class MenuDrop extends JFrame implements ActionListener {
 
     itemExit = new JMenuItem("Exit");
     itemExit.addActionListener(this);
+
+    itemJava = new JMenuItem("Java");
+    itemJava.addActionListener(this);
+
+    itemC = new JMenuItem("C");
+    itemC.addActionListener(this);
+
+    itemPython = new JMenuItem("Python");
+    itemPython.addActionListener(this);
 
     itemFolder = new JMenuItem("Folder");
     itemFolder.addActionListener(this);
@@ -74,8 +86,12 @@ public class MenuDrop extends JFrame implements ActionListener {
     menuFile.add(itemSave);
     menuFile.add(itemExit);
 
-    menuFolder.add(itemFolder);
-    menuFolder.add(itemFile);
+    menuFolder.add(itemJava);
+    menuFolder.add(itemC);
+    menuFolder.add(itemPython);
+
+    menuFolderProyect.add(itemFolder);
+    menuFolderProyect.add(itemFile);
 
     menuEdit.add(itemCut);
     menuEdit.add(itemCopy);
@@ -110,6 +126,12 @@ public class MenuDrop extends JFrame implements ActionListener {
       System.out.println("Folder");
     } else if (e.getSource() == itemFile) {
       System.out.println("File");
+    } else if (e.getSource() == itemJava) {
+      System.out.println("Java");
+    } else if (e.getSource() == itemC) {
+      System.out.println("C");
+    } else if (e.getSource() == itemPython) {
+      System.out.println("Python");
     }
   }
 
