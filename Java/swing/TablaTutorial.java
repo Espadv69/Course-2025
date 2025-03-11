@@ -11,7 +11,8 @@ public class TablaTutorial extends JFrame {
       { "Juan", "Perez", 25 },
       { "Maria", "Gomez", 30 },
       { "Pedro", "Garcia", 35 },
-      { "Jose", "Luis", 52 }
+      { "Jose", "Luis", 52 },
+      { "Aitor", "Diaz", 21 }
   };
 
   public TablaTutorial() {
