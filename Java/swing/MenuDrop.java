@@ -19,6 +19,17 @@ public class MenuDrop extends JFrame {
     form.setSize(300, 200);
     form.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+    menuBar = new JMenuBar();
+    form.setJMenuBar(menuBar);
+
+    menuFile = new JMenu("File");
+    menuEdit = new JMenu("Edit");
+    menuHelp = new JMenu("Help");
+
+    menuBar.add(menuFile);
+    menuBar.add(menuEdit);
+    menuBar.add(menuHelp);
+
     form.setVisible(true);
   }
 
