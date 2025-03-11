@@ -17,7 +17,15 @@ public class DoWhileLoop {
     int counter = 1;
 
     do {
-      System.out.println(counter);
+
+      if (counter >= 100) {
+        System.out.println("The number: " + counter + " has 3 digits.");
+      } else if (counter >= 10) {
+        System.out.println("The number: " + counter + " has 2 digits.");
+      } else {
+        System.out.println("The number: " + counter + " has 1 digit.");
+      }
+
       counter++;
     } while (counter <= i);
 
