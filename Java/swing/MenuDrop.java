@@ -23,20 +23,25 @@ public class MenuDrop extends JFrame implements ActionListener {
     form.setSize(300, 200);
     form.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+    // Create menu bar
     menuBar = new JMenuBar();
     form.setJMenuBar(menuBar);
 
+    // Create menus
     menuFile = new JMenu("File");
     menuFolder = new JMenu("Folder");
     menuEdit = new JMenu("Edit");
     menuHelp = new JMenu("Help");
 
+    // Add menus to menu bar
     menuBar.add(menuFile);
     menuBar.add(menuEdit);
     menuBar.add(menuHelp);
 
+    // Add menu to menu
     menuFile.add(menuFolder);
 
+    // Create menu items
     itemNew = new JMenuItem("New");
     itemNew.addActionListener(this);
 
@@ -67,6 +72,7 @@ public class MenuDrop extends JFrame implements ActionListener {
     itemAbout = new JMenuItem("About");
     itemAbout.addActionListener(this);
 
+    // Add menu items to menu
     menuFile.add(itemNew);
     menuFile.add(itemOpen);
     menuFile.add(itemSave);
