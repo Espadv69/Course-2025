@@ -1,8 +1,13 @@
 package JTextField;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JTextField;
 
 public class JTextOperation extends JFrame {
+
+  private JTextField textField1, textField2;
+  private JButton btnSum, btnSub;
 
   public JTextOperation() {
     JFrame frame = new JFrame("JTextOperation");
