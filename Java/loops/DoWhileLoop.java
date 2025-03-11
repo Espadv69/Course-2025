@@ -9,6 +9,11 @@ public class DoWhileLoop {
 
     System.out.println("Enter a number: ");
     int i = sc.nextInt();
+    if (i > 999) {
+      System.out.println("Number is too large!");
+      System.exit(0);
+    }
+
     int counter = 1;
 
     do {
