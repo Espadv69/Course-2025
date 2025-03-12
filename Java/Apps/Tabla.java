@@ -14,7 +14,7 @@ public class Tabla extends JFrame {
   private JPanel panel;
   private JLabel lblNombre, lblEdad, lblSexo;
   private JTextField txtNombre, txtEdad, txtSexo;
-  private JButton btnAgregar, btnEliminar, btnAgregarPanel;
+  private JButton btnAgregar, btnEliminar;
 
   private JFrame frame;
   private DefaultTableModel model;
@@ -23,7 +23,7 @@ public class Tabla extends JFrame {
   public Tabla() {
     frame = new JFrame("Tabla");
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    frame.setSize(400, 300);
+    frame.setSize(800, 500);
 
     sp = new JScrollPane();
     sp.setBounds(10, 10, 375, 250);
@@ -37,44 +37,38 @@ public class Tabla extends JFrame {
     model.addRow(new Object[] { "Maria", 22, "F" });
 
     panel = new JPanel();
-    panel.setLayout(null);
 
     lblNombre = new JLabel("Nombre");
     lblNombre.setBounds(10, 10, 100, 20);
     panel.add(lblNombre);
-    txtNombre = new JTextField();
-    txtNombre.setBounds(10, 10, 100, 20);
+    txtNombre = new JTextField(10);
     panel.add(txtNombre);
 
     lblEdad = new JLabel("Edad");
     lblEdad.setBounds(120, 10, 100, 20);
     panel.add(lblEdad);
-    txtEdad = new JTextField();
-    txtEdad.setBounds(120, 10, 100, 20);
+    txtEdad = new JTextField(10);
     panel.add(txtEdad);
 
     lblSexo = new JLabel("Sexo");
     lblSexo.setBounds(230, 10, 100, 20);
     panel.add(lblSexo);
-    txtSexo = new JTextField();
-    txtSexo.setBounds(230, 10, 100, 20);
+    txtSexo = new JTextField(10);
     panel.add(txtSexo);
-
-    btnAgregarPanel = new JButton("Agregar");
-    btnAgregarPanel.setBounds(10, 40, 100, 20);
-    panel.add(btnAgregarPanel);
 
     btnAgregar = new JButton("Agregar");
     btnAgregar.setBounds(10, 200, 100, 20);
-    frame.add(btnAgregar);
+    panel.add(btnAgregar);
 
     btnEliminar = new JButton("Eliminar");
     btnEliminar.setBounds(120, 200, 100, 20);
-    frame.add(btnEliminar);
+    panel.add(btnEliminar);
 
     JTable table = new JTable(model);
     sp.setViewportView(table);
     frame.add(sp);
+
+    frame.add(panel, "South");
 
     frame.setVisible(true);
   }
