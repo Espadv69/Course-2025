@@ -24,12 +24,12 @@ public class Tabla extends JFrame {
     model.addColumn("Edad");
     model.addColumn("Sexo");
 
+    model.addRow(new Object[] { "Juan", 25, "M" });
+    model.addRow(new Object[] { "Maria", 22, "F" });
+
     JTable table = new JTable(model);
     sp.setViewportView(table);
     frame.add(sp);
-
-    model.addRow(new Object[] { "Juan", 25, "M" });
-    model.addRow(new Object[] { "Maria", 22, "F" });
 
     frame.setVisible(true);
   }
