@@ -7,6 +7,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
+
 import javax.swing.table.DefaultTableModel;
 
 public class Tabla extends JFrame {
@@ -58,6 +59,12 @@ public class Tabla extends JFrame {
 
     btnAgregar = new JButton("Agregar");
     btnAgregar.setBounds(10, 200, 100, 20);
+    btnAgregar.addActionListener((_) -> {
+      model.addRow(new Object[] { txtNombre.getText(), txtEdad.getText(), txtSexo.getText() });
+      txtNombre.setText("");
+      txtEdad.setText("");
+      txtSexo.setText("");
+    });
     panel.add(btnAgregar);
 
     btnEliminar = new JButton("Eliminar");
