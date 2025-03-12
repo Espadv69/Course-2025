@@ -25,7 +25,7 @@ public class Tabla extends JFrame {
   public Tabla() {
     frame = new JFrame("Tabla");
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    frame.setSize(800, 800);
+    frame.setSize(800, 600);
 
     sp = new JScrollPane();
     sp.setBounds(10, 10, 375, 250);
