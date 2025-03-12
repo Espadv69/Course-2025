@@ -3,6 +3,7 @@ package Apps;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -61,6 +62,7 @@ public class Tabla extends JFrame {
     btnAgregar.setBounds(10, 200, 100, 20);
     btnAgregar.addActionListener((_) -> {
       if (txtNombre.getText().isEmpty() || txtEdad.getText().isEmpty() || txtSexo.getText().isEmpty()) {
+        JOptionPane.showMessageDialog(null, "Por favor, llene todos los campos");
         return;
       }
 
@@ -76,6 +78,8 @@ public class Tabla extends JFrame {
     btnEliminar.addActionListener((_) -> {
       if (model.getRowCount() > 0) {
         model.removeRow(model.getRowCount() - 1);
+      } else {
+        JOptionPane.showMessageDialog(null, "No hay elementos para eliminar");
       }
     });
     panel.add(btnEliminar);
