@@ -1,5 +1,8 @@
 package Apps;
 
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -24,8 +27,8 @@ public class Tabla extends JFrame {
 
   public Tabla() {
     frame = new JFrame("Tabla");
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(800, 600);
+    frame.addWindowListener(null);
 
     sp = new JScrollPane();
     sp.setBounds(10, 10, 375, 250);
@@ -95,6 +98,13 @@ public class Tabla extends JFrame {
 
   public static void main(String[] args) {
     new Tabla();
+  }
+
+  public void WindowClosing(WindowEvent e) {
+    int opcion = JOptionPane.showConfirmDialog(frame, "¿Desea salir del programa?", "Salir", JOptionPane.YES_NO_OPTION);
+    if (opcion == JOptionPane.YES_OPTION) {
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
   }
 
 }
