@@ -1,5 +1,6 @@
 package Apps;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -11,6 +12,7 @@ public class Tabla extends JFrame {
 
   private JPanel panel;
   private JTextField txtNombre, txtEdad, txtSexo;
+  private JButton btnAgregar, btnEliminar;
 
   private JFrame frame;
   private DefaultTableModel model;
