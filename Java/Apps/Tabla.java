@@ -73,6 +73,11 @@ public class Tabla extends JFrame {
 
     btnEliminar = new JButton("Eliminar");
     btnEliminar.setBounds(120, 200, 100, 20);
+    btnEliminar.addActionListener((_) -> {
+      if (model.getRowCount() > 0) {
+        model.removeRow(model.getRowCount() - 1);
+      }
+    });
     panel.add(btnEliminar);
 
     JTable table = new JTable(model);
