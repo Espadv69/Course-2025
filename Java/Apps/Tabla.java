@@ -49,6 +49,14 @@ public class Tabla extends JFrame {
     txtSexo.setBounds(230, 10, 100, 20);
     panel.add(txtSexo);
 
+    btnAgregar = new JButton("Agregar");
+    btnAgregar.setBounds(10, 200, 100, 20);
+    frame.add(btnAgregar);
+
+    btnEliminar = new JButton("Eliminar");
+    btnEliminar.setBounds(120, 200, 100, 20);
+    frame.add(btnEliminar);
+
     JTable table = new JTable(model);
     sp.setViewportView(table);
     frame.add(sp);
