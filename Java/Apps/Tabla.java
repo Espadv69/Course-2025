@@ -2,6 +2,7 @@ package Apps;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -11,6 +12,7 @@ import javax.swing.table.DefaultTableModel;
 public class Tabla extends JFrame {
 
   private JPanel panel;
+  private JLabel lblNombre, lblEdad, lblSexo;
   private JTextField txtNombre, txtEdad, txtSexo;
   private JButton btnAgregar, btnEliminar;
 
@@ -37,14 +39,23 @@ public class Tabla extends JFrame {
     panel = new JPanel();
     panel.setLayout(null);
 
+    lblNombre = new JLabel("Nombre");
+    lblNombre.setBounds(10, 10, 100, 20);
+    panel.add(lblNombre);
     txtNombre = new JTextField();
     txtNombre.setBounds(10, 10, 100, 20);
     panel.add(txtNombre);
 
+    lblEdad = new JLabel("Edad");
+    lblEdad.setBounds(120, 10, 100, 20);
+    panel.add(lblEdad);
     txtEdad = new JTextField();
     txtEdad.setBounds(120, 10, 100, 20);
     panel.add(txtEdad);
 
+    lblSexo = new JLabel("Sexo");
+    lblSexo.setBounds(230, 10, 100, 20);
+    panel.add(lblSexo);
     txtSexo = new JTextField();
     txtSexo.setBounds(230, 10, 100, 20);
     panel.add(txtSexo);
