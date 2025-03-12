@@ -60,6 +60,10 @@ public class Tabla extends JFrame {
     btnAgregar = new JButton("Agregar");
     btnAgregar.setBounds(10, 200, 100, 20);
     btnAgregar.addActionListener((_) -> {
+      if (txtNombre.getText().isEmpty() || txtEdad.getText().isEmpty() || txtSexo.getText().isEmpty()) {
+        return;
+      }
+
       model.addRow(new Object[] { txtNombre.getText(), txtEdad.getText(), txtSexo.getText() });
       txtNombre.setText("");
       txtEdad.setText("");
