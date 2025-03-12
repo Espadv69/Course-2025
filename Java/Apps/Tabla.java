@@ -14,7 +14,7 @@ public class Tabla extends JFrame {
   private JPanel panel;
   private JLabel lblNombre, lblEdad, lblSexo;
   private JTextField txtNombre, txtEdad, txtSexo;
-  private JButton btnAgregar, btnEliminar;
+  private JButton btnAgregar, btnEliminar, btnAgregarPanel;
 
   private JFrame frame;
   private DefaultTableModel model;
@@ -59,6 +59,10 @@ public class Tabla extends JFrame {
     txtSexo = new JTextField();
     txtSexo.setBounds(230, 10, 100, 20);
     panel.add(txtSexo);
+
+    btnAgregarPanel = new JButton("Agregar");
+    btnAgregarPanel.setBounds(10, 40, 100, 20);
+    panel.add(btnAgregarPanel);
 
     btnAgregar = new JButton("Agregar");
     btnAgregar.setBounds(10, 200, 100, 20);
