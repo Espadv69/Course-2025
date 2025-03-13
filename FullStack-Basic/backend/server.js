@@ -19,3 +19,14 @@ app.get('/api/audi', async (req, res) => {
 const server = app.listen(PORT, () => {
   console.log(`Server is running on port http://localhost:${PORT}`)
 })
+
+const cleanUp = () => {
+  console.log('\n🔻 Closing server...')
+
+  try {
+    server.closeAllConnections()
+    console.log('🗑️ Connection closed.')
+  } catch (err) {
+    console.error('❌ Error closing connection:', err)
+  }
+}
