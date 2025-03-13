@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+const audi = require('./data/data.js')
 
 const app = express()
 app.use(cors())
@@ -9,6 +10,10 @@ const PORT = 5000
 
 app.get('/', async (req, res) => {
   res.send('Hello World!')
+})
+
+app.get('/api/audi', async (req, res) => {
+  res.json(audi)
 })
 
 app.listen(PORT, () => {
