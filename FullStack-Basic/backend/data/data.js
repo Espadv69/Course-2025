@@ -1,0 +1,13 @@
+const audi = [
+  {
+    id: 1,
+    name: 'Audi A3',
+    description:
+      "Audi A3 is a 5 seater sedan car available at a price range of Rs. 29.20 Lakh to 34.99 Lakh in India. It is available in 4 variants and 5 colours. Audi A3 comes with BS6 compliant petrol engine only. The A3 has a boot space of 425 litres while it's ground clearance is 165 mm. The petrol engine of A3 is a 1984cc unit which generates a power of 187.74bhp and a torque of 320nm. The A3 is available only with an automatic transmission. The mileage of A3 is 19.2kmpl.",
+    price: 33290,
+    year: 2020,
+    img: 'https://mediaservice.audi.com/media/fast/H4sIAAAAAAAA_y2VzardNhDHTxKSlC5a2lBKX-BSCHQkfxzbi0tJVoU2EEjpJoswsmRJR7JsS7J9j1d9lD5A3qgU-gJdddNNoXOgcOB3Zqz5kOYv--Nfp6drPD15__71j_9-85XWvzePT6eH-XQ6PSL_4_evP_799T_PPvn5z__dz96dnuY1iukRLXn7-FM7olZwmZX-_PScXKcnp9PzX0-np7_dFpw-e7FGP2PE8buo0jyFZDf1xbecY9cWxbnmZSl75KKTvC-KntddyVhZyJJh2Un1JSX6A72HoPt-iFPIZSVVcnmaHzy010GEHgpW1MCrl1hgAfX5JVpAxEqXhFUxBBTT2TBC5LMCVLLoDSGymZx6rLYAaDYuybKiWgeC1xtZTnBVA3q9KLKSOj_QyqQV3qxRj5yQ6gtVSFfmyJmRPxDWhJ0E3Lf2UoJAw50i5Et1IWz8IItaGhCEduHKQHghqE8x7TxRQEwcFxAZ2SahN1hQ872Jy4VDP_V9XUM_o81ngrArOef-okqCtHsJEmOZGEhlS6ogB8MvN1A9cg6bZg2oXgV7w6TIqeTAlCTsDSIoa-oxEnwzlqBm0zzUoJJtdgaDWs-098HsG8UNPrWugmGSw8xhSGI1N8y1p2dHGmhHWoVWr6CdYVdJ2Dw7gx6nwDrQEcutIuStZ6DTrJkDveP5WoBREWtOoNMtCXtLZ20ssnDDeA4XQirDAcah62swaW9tBrNKR3s3V1FQdRvSWhNiqnwBliYWGDiMro2EtDgOTqbKlOD8waisG-clduAmU2ayplELCpi2-hjAxZEfZN2GU4NLWFPXLq2ODsStxjnKcuSSC_DY164G38_LwsFLEejovJThcsOkqEGv0DNPCDyUhFjSiL3FVt8w-kxxDhVp0DvRlEjomzNhig2J1kfS2U7YSE3gk2ojJVvHxiCMKAMd1ojpTJoYZRpGBuOAXSKnU2osCGt7VDBOaB_IOWVZrhBwa9YDQgjDwWHGUc83pK4TMAtTzRXMfe66BWYbupbgfNcOhKlrEeZku87AosdhYbCsiISIsu9GwmTbK2HtSIqRVBc5ROkaGkAkvbUbwW80sUhPdAsxZSbo2TqEo4CE4tzfoJuhIxhkjLAWboEkYruNkPq8eA5JmopualK42DOk4ShIpkk7bglWBGYIqvQlwVR4cx7MZ0gBG08BwbRXyjKvDV3KFM3Z0sosG0Fl81BcNMEwgQTqVkLapuGWZY_tQ0NIbThDdltFlyvPuiP15NkLXkOOQz1wyGkONNu8qWUrIe8rTwj5OnP1QDiKo4FNOJ4Jk9OUepvSwhG2vHXHBjv6LiMhKpLUbrdFc9gTNrTpPaVKG7gqQz84BLZ0-w8Ri51AGsgSDquqQ8DhSBrkdFtJFY7VdCP7XoXN0vt1VCHfv5nevPrww7Qmdbdbmc097wp2Z5TVJt_zqmJ36GeD9wOS9O56HOm23r_L9CH48OpD8YExWhDow5Atve_v307J3v79dAu_S1mpaIPGoL265-zFk1e_vP0P5rOi0oYGAAA?wid=1920',
+  },
+]
+
+export default audi
