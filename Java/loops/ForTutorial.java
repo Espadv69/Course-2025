@@ -10,4 +10,10 @@ public class ForTutorial {
     sc.close();
   }
 
+  public static void forLoop(int numbers) {
+    for (int i = 1; i <= numbers; i++) {
+      System.out.println(i);
+    }
+  }
+
 }
