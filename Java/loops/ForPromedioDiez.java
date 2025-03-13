@@ -11,8 +11,15 @@ public class ForPromedioDiez {
     int promedio = 0;
 
     for (int i = 1; i <= 10; i++) {
-      System.out.println("Enter a number: ");
+      System.out.println("Enter a number between 0 and 10: ");
       int number = sc.nextInt();
+
+      if (number < 0 || number > 10) {
+        System.out.println("Invalid number entered");
+        i--;
+        continue;
+      }
+
       total += number;
     }
 
