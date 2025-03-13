@@ -9,6 +9,7 @@ public class ForMultiplyTable {
 
     System.out.println("Enter the number to print the table: ");
     int number = sc.nextInt();
+    System.out.println("---------------------------");
 
     table(number);
     sc.close();
