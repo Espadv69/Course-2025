@@ -1,66 +1,61 @@
-# COURSE 2025
+# 📚 COURSE 2025
 
-- Academy
+## Academy Projects
 
-- Academy-React
-  ```bash
-    npm install
-  ```
+  - Academy
+  - Academy-React
+    ```bash
+      npm install
+    ```
 
-- diagrams
+## Individual Projects
 
-- HandleProducts
-  ```bash
-    npm install
-  ```
+  - diagrams
+  - HandleProducts
+    ```bash
+      npm install
+    ```
+  - Kitchen
+  - Quiz-App
+    ```bash
+      npm install
+    ```
+  - TaskList
+    ```bash
+      npm install
+    ```
+  - Stopwatch
+    ```bash
+      npm install
+    ```
+  - QuoteGenerator
+    ```bash
+      npm install
+    ```
+  - rock-paper-scissors
+    ```bash
+      npm install
+    ```
+  - testTailwind
+  - memory
+    ```bash
+      npm install
+    ```
 
-- Kitchen
+## Java Projects
 
-- Quiz-App
-  ```bash
-    npm install
-  ```
+  - Java
+    - Apps
+    - JPanel
+    - LogicOperator
+    - loops
+    - Math
+    - swing
+    - switchCase
 
-- TaskList
-  ```bash
-    npm install
-  ```
-
-- Stopwatch
-  ```bash
-    npm install
-  ```
-
-- QuoteGenerator
-  ```bash
-    npm install
-  ```
-
-- rock-paper-scissors
-  ```bash
-    npm install
-  ```
-
-- testTailwind
-
-- memory
-  ```bash
-    npm install
-  ```
-
-- Java
-  - Apps
-  - JPanel
-  - LogicOperator
-  - loops
-  - Math
-  - swing
-  - switchCase
+## React Learning
 
 - learnHooks
-
-- testTailwind
-
 - FullStack-Basic
   ```bash
     cd frontend
