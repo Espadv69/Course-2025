@@ -10,4 +10,4 @@ const audi = [
   },
 ]
 
-export default audi
+exports.audi = audi
