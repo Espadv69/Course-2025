@@ -7,8 +7,14 @@ public class ForTutorial {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
-    System.out.println("Enter a number: ");
+    System.out.println("Enter a number between 1 and 100: ");
     int numbers = sc.nextInt();
+
+    if (numbers < 1 || numbers > 100) {
+      System.out.println("Invalid number");
+      System.exit(0);
+    }
+
     System.out.println("---------------------------------");
 
     forLoop(numbers);
