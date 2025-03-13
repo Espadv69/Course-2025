@@ -59,3 +59,20 @@
 - learnHooks
 
 - testTailwind
+
+- FullStack-Basic
+  ```bash
+    cd frontend
+  ```
+
+  ```bash
+    npm install
+  ```
+
+  ```bash
+    cd backend
+  ```
+
+  ```bash
+    npm install express cors
+  ```
