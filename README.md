@@ -49,6 +49,7 @@
   ```
 
 - Java
+  - Apps
   - JPanel
   - LogicOperator
   - loops
