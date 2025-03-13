@@ -55,20 +55,20 @@
 
 ## React Learning
 
-- learnHooks
-- FullStack-Basic
-  ```bash
-    cd frontend
-  ```
+  - learnHooks
+  - FullStack-Basic
+    ```bash
+      cd frontend
+    ```
 
-  ```bash
-    npm install
-  ```
+    ```bash
+      npm install
+    ```
 
-  ```bash
-    cd backend
-  ```
+    ```bash
+      cd backend
+    ```
 
-  ```bash
-    npm install express cors
-  ```
+    ```bash
+      npm install express cors
+    ```
