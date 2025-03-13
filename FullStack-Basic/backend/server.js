@@ -29,4 +29,9 @@ const cleanUp = () => {
   } catch (err) {
     console.error('❌ Error closing connection:', err)
   }
+
+  server.close(() => {
+    console.log('🔒 Server closed.')
+    process.exit(0)
+  })
 }
