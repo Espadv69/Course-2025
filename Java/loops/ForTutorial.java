@@ -18,6 +18,7 @@ public class ForTutorial {
     System.out.println("---------------------------------");
 
     forLoop(numbers);
+    System.out.println("---------------------------------");
     forLoopEven(numbers);
 
     sc.close();
