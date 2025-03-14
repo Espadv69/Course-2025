@@ -5,7 +5,7 @@
 2. [x] - Ingresar alturas un número indeterminado de veces y sacar el promedio.
 
 3. [x] - Hacer un programa, que cree un archivo en un directorio y si ese archivo ya existe que muestre un mensaje. C:\\Users\\Public\\test.txt
-   [] - Otro que borre.
+   [x] - Otro que borre.
 
 4. [] - Crear ventana login, con Swing.
 
