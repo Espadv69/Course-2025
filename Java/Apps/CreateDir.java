@@ -5,7 +5,7 @@ import java.io.File;
 public class CreateDir {
 
   public static void main(String[] args) {
-    String dirName = "Apps/MyDir";
+    String dirName = "C:\\Users\\Mañana\\Documents\\Course-2025\\Java\\Apps\\NewDir";
     File dir = new File(dirName);
 
     if (dir.exists()) {
