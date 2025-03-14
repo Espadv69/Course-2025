@@ -7,7 +7,7 @@ import java.io.IOException;
 public class CreateFile {
 
   public static void main(String[] args) {
-    File file = new File("C:\\Users\\Public\\test.txt");
+    File file = new File("C:\\Users\\Mañana\\Documents\\Course-2025\\Java\\Apps\\test.txt");
 
     if (file.exists()) {
       System.out.println("File already exists.");
