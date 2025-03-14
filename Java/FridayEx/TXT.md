@@ -7,7 +7,7 @@
 3. [x] - Hacer un programa, que cree un archivo en un directorio y si ese archivo ya existe que muestre un mensaje. C:\\Users\\Public\\test.txt
    [x] - Otro que borre.
 
-4. [] - Crear ventana login, con Swing.
+4. [x] - Crear ventana login, con Swing.
 
 5. [] - Ingresar 3 números y sacar cúal es mayor.
 
