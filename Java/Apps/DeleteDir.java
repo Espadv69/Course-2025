@@ -8,8 +8,15 @@ public class DeleteDir {
     File dir = new File("C:\\Users\\Mañana\\Documents\\Course-2025\\aaa");
 
     if (dir.exists()) {
-      System.out.println("Deleting " + dir);
-      dir.delete();
+      String[] entries = dir.list();
+
+      if (entries.length == 0) {
+        dir.delete();
+        System.out.println("Directory is deleted : " + dir.getAbsolutePath());
+      } else {
+        System.out.println("Directory is not empty");
+      }
+
     } else {
       System.out.println("Directory does not exist");
     }
