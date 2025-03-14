@@ -12,7 +12,7 @@ app.get('/', async (req, res) => {
   res.send('Hello World!')
 })
 
-app.get('/api/audi', async (req, res) => {
+app.get('/api/audis', async (req, res) => {
   res.json(audi)
 })
 
