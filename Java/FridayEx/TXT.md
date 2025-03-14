@@ -1,6 +1,6 @@
 ## Excersices
 
-1. - Ingresar 3 notas, sacar promedio y mostrar mensaje según el resultado.
+1. [x] - Ingresar 3 notas, sacar promedio y mostrar mensaje según el resultado.
 
 2. - Ingresar alturas un número indeterminado de veces y sacar el promedio.
 
