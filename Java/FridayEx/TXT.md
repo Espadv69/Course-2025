@@ -2,7 +2,7 @@
 
 1. [x] - Ingresar 3 notas, sacar promedio y mostrar mensaje según el resultado.
 
-2. - Ingresar alturas un número indeterminado de veces y sacar el promedio.
+2. [x] - Ingresar alturas un número indeterminado de veces y sacar el promedio.
 
 3. - Hacer un programa, que cree un archivo en un directorio y si ese archivo ya existe que muestre un mensaje. C:\\Users\\Public\\test.txt
    - Otro que borre.
