@@ -11,4 +11,4 @@
 
 5. [x] - Ingresar 3 números y sacar cúal es mayor.
 
-6. [] - Ingresar 10 valores enteros y sacar cuantos positivos, negativos e iguales a (0) hay.
+6. [x] - Ingresar 10 valores enteros y sacar cuantos positivos, negativos e iguales a (0) hay.
