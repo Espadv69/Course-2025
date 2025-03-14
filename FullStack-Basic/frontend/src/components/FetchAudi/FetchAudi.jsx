@@ -17,6 +17,7 @@ const FetchAudi = () => {
       }
     }
 
+    console.log(audis)
     fetchAudis()
   }, [])
 }
