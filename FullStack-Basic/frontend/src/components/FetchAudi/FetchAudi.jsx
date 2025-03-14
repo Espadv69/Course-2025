@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './FetchAudi.css'
 
-const LOCAL_URL = 'http://localhost:8000/api/audis'
+const LOCAL_URL = 'http://localhost:5000/api/audis'
 
 const FetchAudi = () => {
   const [audis, setAudis] = useState([])
