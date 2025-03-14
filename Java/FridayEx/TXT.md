@@ -9,6 +9,6 @@
 
 4. [x] - Crear ventana login, con Swing.
 
-5. [] - Ingresar 3 números y sacar cúal es mayor.
+5. [x] - Ingresar 3 números y sacar cúal es mayor.
 
 6. [] - Ingresar 10 valores enteros y sacar cuantos positivos, negativos e iguales a (0) hay.
