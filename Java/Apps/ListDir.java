@@ -8,14 +8,19 @@ public class ListDir {
     File dir = new File("C:\\Users\\Mañana\\Documents\\Course-2025");
     String[] files = dir.list();
 
-    if (files == null) {
-      System.out.println("No files in the directory");
-      return;
+    if (!dir.exists()) {
+      System.out.println("The directory does not exist");
+      System.exit(0);
     }
 
-    for (String file : files) {
-      System.out.println(file);
+    if (files.length > 0) {
+      for (String file : files) {
+        System.out.println(file);
+      }
+    } else {
+      System.out.println("The directory is empty");
     }
+
   }
 
 }
