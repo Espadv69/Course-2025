@@ -7,7 +7,7 @@ import java.io.IOException;
 public class CreateFile {
 
   public static void main(String[] args) {
-    File file = new File("C:\\Users\\Mañana\\Documents\\Course-2025\\Java\\Apps\\test.txt");
+    File file = new File("C:\\Users\\Mañana\\Documents\\Course-2025\\Java\\Apps\\test.md");
 
     if (file.exists()) {
       System.out.println("File already exists.");
@@ -18,7 +18,7 @@ public class CreateFile {
 
     try (FileWriter writer = new FileWriter(file)) {
       System.out.println("File created successfully.");
-      writer.write("Hello World!");
+      writer.write("## Hello World!\nThis is a test file.\n");
     } catch (IOException e) {
       e.printStackTrace();
     }
