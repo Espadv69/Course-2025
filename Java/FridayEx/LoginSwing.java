@@ -28,7 +28,8 @@ public class LoginSwing extends JFrame {
     passField.setBounds(100, 40, 160, 25);
     frame.add(passField);
 
-    frame.setSize(400, 500);
+    frame.setLayout(null);
+    frame.setBounds(100, 100, 300, 150);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setVisible(true);
   }
