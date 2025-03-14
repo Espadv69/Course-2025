@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './FetchAudi.css'
 
-const LOCAL_URL = 'http://localhost:5000/api/audis'
+const LOCAL_URL = 'http://localhost:8000/api/audis'
 
 const FetchAudi = () => {
   const [audis, setAudis] = useState([])
@@ -9,11 +9,12 @@ const FetchAudi = () => {
   useEffect(() => {
     const fetchAudis = async () => {
       try {
-        const reponse = await fetch(LOCAL_URL)
-        if (!reponse.ok) throw new Error('Server error')
+        const response = await fetch(LOCAL_URL)
+        if (!response.ok) throw new Error('Server error')
 
-        const data = await reponse.json()
-        setAudis(data)
+        const data = await response.json()
+        setAudis(data.audi)
+        console.log(data)
       } catch (err) {
         console.error(err)
       }
@@ -32,9 +33,9 @@ const FetchAudi = () => {
             <h3>{audi.name}</h3>
             <p>{audi.description}</p>
             <strong>
-              {audi.price}€ <span>{audi.year}</span>
+              {audi.price}€ Year <span>{audi.year}</span>
             </strong>
-            <img src={audi.img} alt={audi.name} />
+            <img width="150px" src={audi.img} alt={audi.name} />
           </li>
         ))}
       </ul>
