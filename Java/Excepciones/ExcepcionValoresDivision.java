@@ -24,9 +24,11 @@ public class ExcepcionValoresDivision {
       } catch (InputMismatchException exception) {
         System.err.println("InputMismatchError: " + exception.getMessage());
         error = true;
+        sc.nextLine();
       } catch (ArithmeticException exception) {
         System.err.println("ArithmeticError: " + exception.getMessage());
         error = true;
+        sc.nextLine();
       } finally {
         System.out.println("Operación finalizada.");
         System.out.println("-------------------------------");
