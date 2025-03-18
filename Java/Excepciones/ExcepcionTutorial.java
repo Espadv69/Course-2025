@@ -1,5 +1,6 @@
 package Excepciones;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ExcepcionTutorial {
@@ -13,8 +14,8 @@ public class ExcepcionTutorial {
 
       int cuadrado = valor * valor;
       System.out.println("El cuadrado de " + valor + " es " + cuadrado);
-    } catch (Exception e) {
-      System.err.println("Error: " + e.getMessage());
+    } catch (InputMismatchException ex) {
+      System.err.println("Error: " + ex.getMessage());
       System.out.println("Por favor, ingrese un valor entero.");
     }
 
