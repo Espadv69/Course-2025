@@ -1,3 +1,5 @@
+package MathFiles;
+
 public class Math_pow {
 
 	public static void main(String[] args) {

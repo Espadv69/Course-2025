@@ -1,3 +1,5 @@
+package MathFiles;
+
 import java.util.Scanner;
 
 public class NumeroMayor {
