@@ -1,4 +1,3 @@
-import '@fontsource-variable/roboto'
 import Home from './pages/Home'
 
 const App = () => {
