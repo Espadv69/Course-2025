@@ -24,3 +24,26 @@
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
 }
+
+.li__audis {
+  padding: .5rem;
+  padding-bottom: 1rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  border-radius: 8px;
+
+  background: #414141;
+}
+
+.li__audis--img {
+  width: 100%;
+
+  border-radius: 8px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
