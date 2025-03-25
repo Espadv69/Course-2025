@@ -9,4 +9,7 @@
 
   overflow-y: auto;
   max-height: 500px;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgb(85, 85, 85) rgb(61, 61, 61);
 }
