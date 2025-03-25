@@ -1,14 +1,14 @@
 .container__audis {
   margin: 1.5rem auto;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
   overflow-y: auto;
-  max-height: 500px;
+  max-height: 80dvh;
 
   scrollbar-width: thin;
   scrollbar-color: rgb(85, 85, 85) rgb(61, 61, 61);
@@ -51,4 +51,10 @@
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   object-fit: cover;
+}
+
+.li__audis--p {
+  padding: 0 .5rem;
+  font-size: 1.2rem;
+  text-align: left;
 }
