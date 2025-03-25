@@ -39,6 +39,11 @@
   background: #414141;
 }
 
+.li__audis--h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 .li__audis--img {
   width: 100%;
 
