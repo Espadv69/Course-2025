@@ -31,16 +31,15 @@ const FetchAudi = () => {
         {audis.map((audi) => (
           <li key={audi.id} className="li__audis">
             <h3 className="li__audis--h3">{audi.name}</h3>
-            <p className="li__audis--p">{audi.description}</p>
-            <strong className="li__audis--strong">
-              {audi.price}€ Year <span>{audi.year}</span>
-            </strong>
             <img
               className="li__audis--img"
               width="150px"
               src={audi.img}
               alt={audi.name}
             />
+            <p className="li__audis--p">{audi.description}</p>
+            <strong className="li__audis--strong">{audi.price}€</strong>
+            <p>Year: {audi.year}</p>
           </li>
         ))}
       </ul>
