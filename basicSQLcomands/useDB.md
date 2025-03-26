@@ -1,5 +1,5 @@
 # Use DataBase
 
 ```sql
-  use nameDB
+  use nameDB;
 ```
