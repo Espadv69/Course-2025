@@ -1,5 +1,5 @@
 # Show DataBases
 
 ```sql
-  show databases
+  show databases;
 ```
