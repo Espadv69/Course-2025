@@ -1,4 +1,4 @@
-# CREATE DATABASE
+# Create DataBase
 
 ```sql
   CREATE DATABASE nameDB
