@@ -1,5 +1,10 @@
 # 📚 COURSE 2025
 
+## Learn SQL and Diagrams
+
+  - diagrams
+  - basicSQLcomands
+
 ## Academy Projects
 
   - Academy
@@ -10,7 +15,6 @@
 
 ## Individual Projects
 
-  - diagrams
   - HandleProducts
     ```bash
       npm install
