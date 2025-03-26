@@ -46,10 +46,13 @@
 
   - Java
     - Apps
-    - JPanel
+    - Excepciones
+    - FridayEx
+    - JPanelFiles
+    - JTextField
     - LogicOperator
     - loops
-    - Math
+    - MathFiles
     - swing
     - switchCase
 
