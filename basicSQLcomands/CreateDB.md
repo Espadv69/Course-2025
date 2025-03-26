@@ -1,0 +1,5 @@
+# CREATE DATABASE
+
+```sql
+  CREATE DATABASE nameDB
+```
