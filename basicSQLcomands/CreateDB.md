@@ -1,5 +1,5 @@
 # Create DataBase
 
 ```sql
-  create database nameDB
+  create database nameDB;
 ```
