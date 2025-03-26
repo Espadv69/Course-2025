@@ -18,3 +18,9 @@ Change from varchar to int, it's an example.
 ```sql
   alter table tableName add fieldNameToAdd varchar(40) after fieldNameFromTable
 ```
+
+## Using Rename
+
+```sql
+  alter table tableName rename newTableName;
+```
