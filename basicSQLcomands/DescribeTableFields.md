@@ -1,5 +1,5 @@
 # Describe Table Fields
 
 ```sql
-  describe tableName
+  describe tableName;
 ```
